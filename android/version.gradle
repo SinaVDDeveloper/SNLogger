@@ -1,0 +1,33 @@
+def versions = [:]
+def androidx = [:]
+def deps = [:]
+def build_versions = [:]
+def lifecycle = [:]
+def annotation = [:]
+
+//build_versions
+build_versions.compile_sdk = 28
+build_versions.build_tools = "29.0.2"
+build_versions.min_sdk = 17
+build_versions.target_sdk = 26
+build_versions.versionCode = 100
+build_versions.versionName = "1.0.0"
+
+versions.android_gradle_plugin = "4.1.3"
+
+versions.junit = "4.12"
+
+deps.android_gradle_plugin = "com.android.tools.build:gradle:$versions.android_gradle_plugin"
+
+androidx.appcompat = "androidx.appcompat:appcompat:1.2.0"
+androidx.material = "com.google.android.material:material:1.3.0"
+
+deps.junit = "junit:junit:$versions.junit"
+
+deps.versions = versions
+deps.androidx = androidx
+deps.lifecycle = lifecycle
+deps.annotation = annotation
+
+ext.deps = deps
+ext.build_versions = build_versions
