@@ -1,15 +1,18 @@
 buildscript {
-    apply from: 'global_env.gradle'
-    apply from: "version.gradle"
-    addRepos(repositories)
+    repositories {
+        maven { url = 'https://mirrors.huaweicloud.com/repository/maven/' }
+    }
 
     dependencies {
-        classpath deps.android_gradle_plugin
+        classpath "com.android.tools.build:gradle:4.1.3"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.21"
     }
 }
 
 allprojects {
-    addRepos(repositories)
+    repositories {
+        maven { url = 'https://mirrors.huaweicloud.com/repository/maven/' }
+    }
 }
 
 task clean(type: Delete) {

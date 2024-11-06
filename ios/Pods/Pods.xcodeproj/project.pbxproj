@@ -1,0 +1,1273 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 63;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		000FE2D9F2551812A326752829A58E7A /* certs.h in Headers */ = {isa = PBXBuildFile; fileRef = D58136782D131CFC00521C97F71CB8B9 /* certs.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		0320E90F37C93490A6EE3D83DEAEE033 /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = C4E0E0E692C3BBF7A8D0756C4960C5AD /* base64.c */; };
+		0494F42C711E0B98F8234C020BA3E5AB /* aes_util.h in Headers */ = {isa = PBXBuildFile; fileRef = 704A5F780E2E32F5AE312331CAF4DBCB /* aes_util.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		049E454E1EDD592E37A482E165441E8E /* ssl_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F02ADB7F3410EE75A3E046874F04093 /* ssl_internal.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		0763D9090FF5EC1376CC5E976A7021A0 /* pkcs11.c in Sources */ = {isa = PBXBuildFile; fileRef = 7FEE88E3752B5E084A90785D30D702AC /* pkcs11.c */; };
+		0B801297E6769B8A431BF08332ACB44C /* platform.h in Headers */ = {isa = PBXBuildFile; fileRef = B1CB621653548CFE3EF3D8939A3D4BFA /* platform.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		0D14969A172A6665397F055EC1034C39 /* zlib_util.c in Sources */ = {isa = PBXBuildFile; fileRef = 92A091E8115F29F260C6B519DAD11505 /* zlib_util.c */; };
+		0DA7BA6C32AC11198C5B204090025682 /* platform.c in Sources */ = {isa = PBXBuildFile; fileRef = 9AD741CD3EFB0ACAE12E277ACDEB7C70 /* platform.c */; };
+		0DBFADDFE9377B6A9E9F663842973696 /* platform_time.h in Headers */ = {isa = PBXBuildFile; fileRef = DDEB44197414BBEAC4C533AE97FA2980 /* platform_time.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		0FA3BF0B973DF5FA9204A3C17A7DF98D /* md4.h in Headers */ = {isa = PBXBuildFile; fileRef = B5C49B7EC07C35C80350D3B34C9233E3 /* md4.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1023350A3788DC0864446F2E680523F7 /* x509_csr.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BB4AF85D47642F3D37E92746A363D7A /* x509_csr.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1030A70255776CA8C86BEE866F111D2F /* clogan_core.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EF61E5C278184360F10672AD5514AC9 /* clogan_core.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		10FA65FB3B5FEA6A16DD970F13C83467 /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = 209BBFEBA29F6FACC2E93C191422FA58 /* version.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		18A1C02FF2B719CF4EA25BB5F9E46039 /* directory_util.c in Sources */ = {isa = PBXBuildFile; fileRef = 5D238623D472863BE8E12846BD3579DA /* directory_util.c */; };
+		18B5988A940D4DB9A0570D997B006559 /* base64.h in Headers */ = {isa = PBXBuildFile; fileRef = C3BA02106ED7E9816290696A9A9CEABD /* base64.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1A0A6B2C6D2B924F31985760BB0B35D5 /* x509write_crt.c in Sources */ = {isa = PBXBuildFile; fileRef = 46BC717D11509AB39F0D639EB601F7AF /* x509write_crt.c */; };
+		1BB0F3AEDBA4782FF6891FF3B2D573DC /* gcm.c in Sources */ = {isa = PBXBuildFile; fileRef = 2DC093F37AF0C21FD378D15088912002 /* gcm.c */; };
+		1DCCEB3CD9AD8B32908744D5F225FBC3 /* pkcs5.h in Headers */ = {isa = PBXBuildFile; fileRef = BCE4521745FDD3ED6FEFA492B96C4361 /* pkcs5.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1FB297075A4B496A1AD8552DD9D62C50 /* blowfish.h in Headers */ = {isa = PBXBuildFile; fileRef = 107E0A2F536F56FCF9022AB51FDDACDB /* blowfish.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		20D1D9DC292A39B2DF8D8CCB077351E9 /* check_config.h in Headers */ = {isa = PBXBuildFile; fileRef = 85402B11D51710A7622B248B3A694A0B /* check_config.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		23499C1BA93AB76C73B87DBF3D287716 /* oid.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C25720D8D523F28A2D97191BC58235C /* oid.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		235D946954D469CEB2E9E287754EAF3B /* pkwrite.c in Sources */ = {isa = PBXBuildFile; fileRef = 6A9F5CC675ECEE5DB8BBCC584730E57B /* pkwrite.c */; };
+		260B72717553F9B282E5F8D1018C485D /* cJSON.c in Sources */ = {isa = PBXBuildFile; fileRef = 5430F557D4911C56ABB78D559E210057 /* cJSON.c */; };
+		26440DD7A86E8B1D1DF62CF2C821F9CB /* ripemd160.h in Headers */ = {isa = PBXBuildFile; fileRef = 8309D8459F73D4C981FB6D6A58BDB1D2 /* ripemd160.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		264706EA092DF035E39E7E08A79F96F9 /* ccm.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AAB0E82C8B69958C037B06034496CD3 /* ccm.c */; };
+		26719F46D94B21C4A5CFFE4C02C87453 /* camellia.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E451920A76E455E76844D0D790497C3 /* camellia.c */; };
+		2699A536774D9467C9EE2243B3ABE74C /* havege.h in Headers */ = {isa = PBXBuildFile; fileRef = 136EC5DD19B3C7D9EA0F3744EAD5E879 /* havege.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		274CFFB523E586461A79E7AF06FEA557 /* memory_buffer_alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 171B7149D752C19786B7F6AAFF09E3CE /* memory_buffer_alloc.c */; };
+		278D81D7BA2C0396FE0E0266D6EC233B /* pk_wrap.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F0EAAED734FFAC2AB8DD0F81BA8AE /* pk_wrap.c */; };
+		28A56EB3449C3EC15A097D9750799911 /* ssl.h in Headers */ = {isa = PBXBuildFile; fileRef = A81D257F7BD2DC8C5E50837110527255 /* ssl.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		2BAB0FE287E313703726997D067A7BF1 /* net.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BF8F3B841C436B322C82913FB140BCE /* net.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		2CFE23A7770AB3BD2376B1CD3FB0AE67 /* bn_mul.h in Headers */ = {isa = PBXBuildFile; fileRef = E8CC366644F090AE7BBA2F02CEC2CB54 /* bn_mul.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		2EC7079748B8A011A66E823E4647A7F7 /* base_util.c in Sources */ = {isa = PBXBuildFile; fileRef = FBFFF4E7BF62D2B524CF25225D38E4AD /* base_util.c */; };
+		2FA8A957FD2BBCCE5C7E6227AE9C7E3B /* asn1write.h in Headers */ = {isa = PBXBuildFile; fileRef = AA09684ECB3DA565F8EE77EEE6A92CD6 /* asn1write.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		303D884F813F8A8F0E006FA2456E7902 /* ssl_ciphersuites.c in Sources */ = {isa = PBXBuildFile; fileRef = EF296A7529F1F856EA4EA422E65B2D0C /* ssl_ciphersuites.c */; };
+		31CEFD717E3E274C9867E348CEDC3646 /* error.h in Headers */ = {isa = PBXBuildFile; fileRef = D60060173D297916189D47C29D7D4EFB /* error.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		342A23AF2B1B8C192F20BB0A3AE19E12 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 760B9DC839B455CC7FFCF7CCD119A963 /* config.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		387F2A794379DBE7EBB8CEF34C0F20E0 /* zlib_util.h in Headers */ = {isa = PBXBuildFile; fileRef = B3F72B9E3A7F8AE990E2C40CF05B1160 /* zlib_util.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3A0B62B7E144C4CB8A71335DC3469838 /* ssl_ciphersuites.h in Headers */ = {isa = PBXBuildFile; fileRef = 98689B4FA562142A144BCB3B0ED94322 /* ssl_ciphersuites.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		3C7617708FCB87002AF004D5EF40AA01 /* ecdh.c in Sources */ = {isa = PBXBuildFile; fileRef = 039E0E016C6B91F9ACB310038AC234B4 /* ecdh.c */; };
+		3E46254A5315E01C1A5656D4211AA77E /* hmac_drbg.c in Sources */ = {isa = PBXBuildFile; fileRef = 518169F224F8DDEDC6089AA5A7482265 /* hmac_drbg.c */; };
+		3E722BB852012027C43B320BA5FA33CC /* asn1parse.c in Sources */ = {isa = PBXBuildFile; fileRef = A5A1F02C162B5A6AC5DE33411F6333BC /* asn1parse.c */; };
+		3EFB104BE40C733E22E89CF11232784B /* clogan_core.c in Sources */ = {isa = PBXBuildFile; fileRef = 820EFF6114B34F0B5B8ECDE01495DC7C /* clogan_core.c */; };
+		3FCD95791D19AB16E83256B4ADB78DC7 /* md4.c in Sources */ = {isa = PBXBuildFile; fileRef = 6ED7D454976FFD49BE7E81C4AFA5DBEB /* md4.c */; };
+		43AACAC6DB50A43AD84FBAE63E094B44 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		45152B3FF1CB72771F1E9356B96D4C73 /* ecjpake.c in Sources */ = {isa = PBXBuildFile; fileRef = 043C73B57392351E285144372391EC9B /* ecjpake.c */; };
+		452BECFB111234BDE88946A8D375ED3F /* xtea.h in Headers */ = {isa = PBXBuildFile; fileRef = 70ADBFDDC88B7A1EFCBAD9CCCE8109DE /* xtea.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		459D4F6DD262A1D6C537F25832C6F31D /* entropy.c in Sources */ = {isa = PBXBuildFile; fileRef = E7F6B17A8277DFCC984A461946AF5DB2 /* entropy.c */; };
+		45CC4C6AA361AA0F89F98205F639857B /* arc4.c in Sources */ = {isa = PBXBuildFile; fileRef = 6FB866686A8CCA32B2222996EB98AE94 /* arc4.c */; };
+		45FF09F792D5C108EAEFD155671D6A7C /* logan_config.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D0F80B0FCC05E6DCA0C020F9E7DA4A7 /* logan_config.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		470DB48431832D11E39842CBBBB7DDD6 /* ssl_cache.h in Headers */ = {isa = PBXBuildFile; fileRef = A1EA3CFDA663B5CBF42FBA64A96AD115 /* ssl_cache.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		477AB28A82757397A9C0FB3948EFEF5F /* mmap_util.c in Sources */ = {isa = PBXBuildFile; fileRef = C28E80F9931F32D1E01D10B1212C2BC0 /* mmap_util.c */; };
+		47CDFF5F5AD9C626ED493173C6E3C282 /* rsa.h in Headers */ = {isa = PBXBuildFile; fileRef = 91B748F71ABADDD67E22291AF0CDF74F /* rsa.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		4AFBC45F667ACCF297E411F498FBC0E9 /* Logan-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 803F3DFF1F4DF71AABC33783A6C1C103 /* Logan-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B1F84AEB0ABAA1555ABDBFF476C935B /* aesni.h in Headers */ = {isa = PBXBuildFile; fileRef = 12F79EEC1A6BFB6A492176BA038FF4FA /* aesni.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		4BC87C58C40848E45A1595DF61E2A11E /* cJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = F4F7FC8B03DA6A1D52303A3B0B0677D8 /* cJSON.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4D079C8498CDF98DE943D74931A747C6 /* x509_crt.h in Headers */ = {isa = PBXBuildFile; fileRef = 98649F8292F71B5D2684B1528FC294F1 /* x509_crt.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		4E81BE69464C709B0EA458247BA32093 /* x509_crl.h in Headers */ = {isa = PBXBuildFile; fileRef = D07011C1F115C8F622F283CCE8755CFD /* x509_crl.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		4F055551012750BFB24D5E151E7576E6 /* md_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BCCE21E758A16132359ABB4EFAB6E0B /* md_internal.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		51A3C32AAD76B231F618C84C752A240E /* threading.c in Sources */ = {isa = PBXBuildFile; fileRef = C0D771DCCDB31F39D30F5F8EDC8FE018 /* threading.c */; };
+		53B1F3837E3D31F9C6CBE1093F7EF69D /* sha256.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CB4811C5F1E187D4E3555B105598E8C /* sha256.c */; };
+		549BC83B6E5586239D0E135DA23FF7C4 /* sha512.c in Sources */ = {isa = PBXBuildFile; fileRef = 76328B2CDD41E5B4948D532141C6104F /* sha512.c */; };
+		5B71F4807EBFBE41CA4CF8C81FCAE5DC /* threading.h in Headers */ = {isa = PBXBuildFile; fileRef = 10F4210C5CC6913984B9D6B0EC6B19AC /* threading.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		671A84D8962B1C3B258CC5134F78F111 /* pkcs11.h in Headers */ = {isa = PBXBuildFile; fileRef = 146E484D53F3DC1BF9D7545C84572E33 /* pkcs11.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		682892D0BAB8AE0C598C4679C1DDF619 /* entropy_poll.h in Headers */ = {isa = PBXBuildFile; fileRef = E8A45C50C46C0DB40935903B37799362 /* entropy_poll.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		6A04929EA7EED0C3E70545FF059F94F3 /* oid.c in Sources */ = {isa = PBXBuildFile; fileRef = A9780F86C22EF502F5639185A85FAB4E /* oid.c */; };
+		6B03D6EFF8DEC6C3C81869BD5BDAD031 /* md2.c in Sources */ = {isa = PBXBuildFile; fileRef = BE4DFE0EC83181D8030FD637E175381D /* md2.c */; };
+		6B996DE073D147CA23B52CB330DBEED7 /* sha512.h in Headers */ = {isa = PBXBuildFile; fileRef = 00D3DF8BF02C79EFE950F5ED3D5770D8 /* sha512.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		6CBFA7B43C6B65272716AB08DB78BD64 /* timing.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A27132850CB79B5CA9293203A33437D /* timing.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		6F135CD103E06E541A1FEB28D0973887 /* Pods-SNLogger-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 96AB4052ADB411A8EA922EBBF09EC320 /* Pods-SNLogger-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7070F77E9E94C5FF8280931FD4885BA3 /* debug.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E3AD0042BCCA67022AD901A7293749A /* debug.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		70A12ECFA63D49D92C068215E85DA608 /* pk_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 225A602650E94565110B45CF1A6D9158 /* pk_internal.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		77C6C1F3FEE66A1A4F61544171D21063 /* havege.c in Sources */ = {isa = PBXBuildFile; fileRef = 435150BDD5580C417EC44478F27D9EE1 /* havege.c */; };
+		77CA1B1CE10761742CC47849CA289280 /* md2.h in Headers */ = {isa = PBXBuildFile; fileRef = A096237B5AEC3DAC9078CCEEF469EE2A /* md2.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7DB0ECCD055BCCD8F94366F39D3A2302 /* x509.h in Headers */ = {isa = PBXBuildFile; fileRef = E901A541A7B99CBFC03B6D462B6E97F8 /* x509.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		81669597D2FD434795C7C6D6C05AF16C /* ssl_cookie.c in Sources */ = {isa = PBXBuildFile; fileRef = 67E4ACF0767AC6211223FD87D1972024 /* ssl_cookie.c */; };
+		81E0C348742BB21CE2C18D2F857F24FB /* aes.c in Sources */ = {isa = PBXBuildFile; fileRef = BEF4B2BCD86F83F73849AED3C9089D35 /* aes.c */; };
+		81FDFBA75AB3A63193E0CB630FF28BEC /* version_features.c in Sources */ = {isa = PBXBuildFile; fileRef = 8AF9932778F2FB84CEAE51AA7EDA9E29 /* version_features.c */; };
+		8236AB190359F99C49037E493D024466 /* Logan.m in Sources */ = {isa = PBXBuildFile; fileRef = C9D515C630ED52561E5E2D180C9B298A /* Logan.m */; };
+		83D959C8F86762460DF29FD8CBEAEC85 /* ssl_tls.c in Sources */ = {isa = PBXBuildFile; fileRef = F9B64C43EF28CDB9A202F2E34F58E8A3 /* ssl_tls.c */; };
+		83FF193FCE4E9517FB845DF63C1A39BC /* ssl_srv.c in Sources */ = {isa = PBXBuildFile; fileRef = 0F7CB1B1A9AAE54A46EB0428CFE0EC0C /* ssl_srv.c */; };
+		86CC58DBD102CDF5779E72A715210FF2 /* rsa.c in Sources */ = {isa = PBXBuildFile; fileRef = A1B30721027098153B1AC7A11F1C0D3A /* rsa.c */; };
+		8AE00E6CD0AA6FA07276C38EB02E5E02 /* pem.h in Headers */ = {isa = PBXBuildFile; fileRef = F9B0CA47DD4B65CC17BE768A79C0BAC4 /* pem.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8C98571FB716EC85A3756CC0DF58CFE7 /* Logan-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0180B14A3F29666EADB5C5506081B95A /* Logan-dummy.m */; };
+		8EF7F665F94F4D246BBAE5215CD79F36 /* pkcs12.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C49DAA1117AD2FADBC064DD6DCCDF81 /* pkcs12.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		8F35B810627E7DCB4806465E5BEE5A1E /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 0777603F6DBB547DBC6AAD41EC72F2D5 /* main.c */; };
+		8FBB9BFBF27FD7C5517714A5B7BAA1A4 /* timing.c in Sources */ = {isa = PBXBuildFile; fileRef = FDA9EB56BDD32751E24DA77C504A7275 /* timing.c */; };
+		8FD74DFB8673E35AFF2B5C75256E4237 /* des.c in Sources */ = {isa = PBXBuildFile; fileRef = C8F37CBEB36BCD95E1965281329A7AA2 /* des.c */; };
+		90AC6CBBD90B11DAD52E558CC3CC0613 /* error.c in Sources */ = {isa = PBXBuildFile; fileRef = C17561DB75EEC4FF9F0B5B03CB09A918 /* error.c */; };
+		90E57E5ED452113BFB29DF91450425D4 /* aesni.c in Sources */ = {isa = PBXBuildFile; fileRef = 81891E8A5D2864281CB18B42E9DFE6BC /* aesni.c */; };
+		90F6FEE095C784B2A53010106BB2D755 /* asn1.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A281CB87F4BA31AB621F6693D5E2FD6 /* asn1.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		911602CEF0198715D960B76AD82721EE /* pk.c in Sources */ = {isa = PBXBuildFile; fileRef = 7A6CEF6B103E06852CFB9407D144A3B4 /* pk.c */; };
+		924DBDF967E2065D379AA2A1D26BF0AE /* Pods-SNLogger-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 419EB832167875FF0CCB7509829F3417 /* Pods-SNLogger-dummy.m */; };
+		933CA03BFE92CE23EF860AC56F34C850 /* ecdsa.h in Headers */ = {isa = PBXBuildFile; fileRef = B2D99665D7D6A5238D54F07A913C775D /* ecdsa.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		935C48FF800F384ACFA2AF2040FD5678 /* construct_data.h in Headers */ = {isa = PBXBuildFile; fileRef = A9809FE77D273A2EC7F46CEAF2CCC534 /* construct_data.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		93C35009C81CCF92A632132094DB92BA /* aes_util.c in Sources */ = {isa = PBXBuildFile; fileRef = DF124098DE9785E9ABD90F4B60ADDF31 /* aes_util.c */; };
+		955C3A50924D9945E746E56CE7CA7BF1 /* json_util.c in Sources */ = {isa = PBXBuildFile; fileRef = F3A8032B8D381EA9CE2F679781E7C792 /* json_util.c */; };
+		9712571326DBCA3EFCA31F1636F68BBB /* md_wrap.c in Sources */ = {isa = PBXBuildFile; fileRef = 717D16BA100DDF74900296570A77B28B /* md_wrap.c */; };
+		9752374B78DB4FC6B778A4DB7A18E1A2 /* pkcs5.c in Sources */ = {isa = PBXBuildFile; fileRef = E136CDE6799109B3CF75DC2B835EBE3C /* pkcs5.c */; };
+		9930E353C51236C9DC47157CBECEF844 /* debug.c in Sources */ = {isa = PBXBuildFile; fileRef = ABD7B98BCC7D2CE19099B95759B8B1D7 /* debug.c */; };
+		9B3864AB48B37EB9B47BC76C73A2C779 /* ssl_cli.c in Sources */ = {isa = PBXBuildFile; fileRef = D9AF512E1F822CB9823A47A33EB130C4 /* ssl_cli.c */; };
+		9C2C62D565E91805971C37024A458A13 /* version.c in Sources */ = {isa = PBXBuildFile; fileRef = EB0272F489E7B22CF8F6DD00AF9C350E /* version.c */; };
+		9DA20914517EE2CE951687B736F3F1C1 /* x509write_csr.c in Sources */ = {isa = PBXBuildFile; fileRef = 1FE0FD25F5048B7A72323D216331F34E /* x509write_csr.c */; };
+		9DF5438A1E789881A97AB821F7769427 /* memory_buffer_alloc.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B120BE5D1D1AE63C0AACB958E0C20F6 /* memory_buffer_alloc.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		9E588A4C4A8ED4CDD0762760E1370A86 /* bignum.c in Sources */ = {isa = PBXBuildFile; fileRef = 9B76A38EAAEFFECCA473B470B5FB4745 /* bignum.c */; };
+		9E6E972AD26C9965180F97D01488E77C /* sha1.h in Headers */ = {isa = PBXBuildFile; fileRef = 9700452B38BAC798FA4EFD6818F6ECE6 /* sha1.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		9EAE5555C86D8477E216DC24BDB16863 /* bignum.h in Headers */ = {isa = PBXBuildFile; fileRef = B1C05D220DB08AAFD5C90A3040923FF7 /* bignum.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A36AC3903D35882B747DBEA86BDA61B3 /* camellia.h in Headers */ = {isa = PBXBuildFile; fileRef = 8679DCC3DF7D67DA6650E7DB90C9636B /* camellia.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A6B3C22B7BF624C327D862C0F38AEFD2 /* mmap_util.h in Headers */ = {isa = PBXBuildFile; fileRef = 937FD8B98426754004D9657E88D1E9F0 /* mmap_util.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A6E7439DA6C8A242DFB0572CA51D4A6C /* padlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 91E3B0D3BDFC4321DE3B5162333C96A0 /* padlock.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A7530EF178D56683C942D9E0AE264A3E /* cipher_wrap.c in Sources */ = {isa = PBXBuildFile; fileRef = EB9FAB013E6C65FD7ED9297141B38ABF /* cipher_wrap.c */; };
+		A7CE8A59DBD9A074FF4B33DC2B8DCFE0 /* ecp_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 26FC43BF1DBF238A5303E4ACFA3FEAD7 /* ecp_internal.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		AA3DE5A957AB7979162E26C42CF05A3A /* hmac_drbg.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AE9DDDD0C22505427B67CB19FC8A841 /* hmac_drbg.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		ABBE6FDFFCE3561B03B495659EA242AE /* ssl_ticket.c in Sources */ = {isa = PBXBuildFile; fileRef = DDD76F5E1E642869E1BC2E4EF28AE335 /* ssl_ticket.c */; };
+		ABC4F9362330D3D540E3BF9BD6A6C48F /* cipher.c in Sources */ = {isa = PBXBuildFile; fileRef = 4F5C9928B109E6F41A4B3F2F5580CC84 /* cipher.c */; };
+		AC781785B24ACF8905A66B33458E8DB6 /* ecjpake.h in Headers */ = {isa = PBXBuildFile; fileRef = 25546FFC5B97506119C5208DFC349FB8 /* ecjpake.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		AE5702E23DD46B433242947E0ECF4B8B /* ecdh.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BF852A038425024E957590613BB1077 /* ecdh.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		AF5DB34E295AD6FB85E7C35AC91FF4BB /* ssl_cookie.h in Headers */ = {isa = PBXBuildFile; fileRef = 9624E62EB9AD8BD0E0D076950560910F /* ssl_cookie.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		AFF8101CF603DB6EAAE8275853D4714D /* net_sockets.h in Headers */ = {isa = PBXBuildFile; fileRef = 59D09472384DE917CAA794F7FFE15CF1 /* net_sockets.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		B0BE2004C8D3A3F86F989E5465669137 /* sha256.h in Headers */ = {isa = PBXBuildFile; fileRef = 61AA7ED1E860075767A8BB8FF05F4D45 /* sha256.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		B3A92CF15C87B27CF9309CEF00A7FABD /* entropy.h in Headers */ = {isa = PBXBuildFile; fileRef = DAD79BC4E6C8118A729BBA84FCFFDAD1 /* entropy.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		B4C516DC32142123E05BC5A34062DD2F /* ripemd160.c in Sources */ = {isa = PBXBuildFile; fileRef = 2625E02DCED16FC86D7829066F1D4FAF /* ripemd160.c */; };
+		B5E29852BA2BC81354F65FD106373500 /* dhm.c in Sources */ = {isa = PBXBuildFile; fileRef = 4F6AC84C4D08485D93A888A4B9FC2BC2 /* dhm.c */; };
+		B80F24FF04207645FF711F37D6CFAB50 /* xtea.c in Sources */ = {isa = PBXBuildFile; fileRef = 96CE608D6727DC10D8140CA6D61E460D /* xtea.c */; };
+		BC30EB9F65CB778C48872E44FD1A0238 /* entropy_poll.c in Sources */ = {isa = PBXBuildFile; fileRef = EF34425F4C6708A129A99B40B34C9B75 /* entropy_poll.c */; };
+		BD3C9D46ECF53D4F18E5A262AD7C36A7 /* net_sockets.c in Sources */ = {isa = PBXBuildFile; fileRef = 9718CD1B784A08E5C8BE51A3221A77EB /* net_sockets.c */; };
+		BF20D8A81832E60B5177D589EA65D89A /* dhm.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A4018D713F2B69D056CBD3666A652AB /* dhm.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		BF7AAE28E0F7B06F9B3FD5B28E4D6538 /* directory_util.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D7148CC0DD8F94028F07F8FD41F7A47 /* directory_util.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C0C07165E5ACE7C06D61861B13A8B511 /* ecdsa.c in Sources */ = {isa = PBXBuildFile; fileRef = 73C3E7BA3F22BBDED407103B0F862C6B /* ecdsa.c */; };
+		C19FBDC580F60F4062F05A99E40B4B6A /* md5.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C43678C4533BE3AA867AF6ACAB63FB6 /* md5.c */; };
+		C25BDA7FDA7FF7281D89FDBD46ADD575 /* construct_data.c in Sources */ = {isa = PBXBuildFile; fileRef = 660F145E77290FAD237947E6C0F7F554 /* construct_data.c */; };
+		C29C8F82FDFCF98120EFB1097445B268 /* md5.h in Headers */ = {isa = PBXBuildFile; fileRef = 299ED13A6F3620D54C34AA9B3352F54F /* md5.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C2AD66F8A925FEA46EDF6DCC370E2206 /* arc4.h in Headers */ = {isa = PBXBuildFile; fileRef = 85162FAB2B183322495F00DD391301E1 /* arc4.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		C2B407B790D91DA5DFA806FF8050803A /* x509_crl.c in Sources */ = {isa = PBXBuildFile; fileRef = 5940A4DA80A30F329944C02A9F233CA2 /* x509_crl.c */; };
+		C38B4920DC9676D0364E4812DA37EF8C /* blowfish.c in Sources */ = {isa = PBXBuildFile; fileRef = 2B10833ECCE4463B038DDB2C917A758F /* blowfish.c */; };
+		C93565F49D3C761565B8F9E1AF5BC348 /* json_util.h in Headers */ = {isa = PBXBuildFile; fileRef = 347B26E15FE4DCD30A0EAC12417D6150 /* json_util.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CCC25F47428C5A08FA7E7B2D248FB5B8 /* pem.c in Sources */ = {isa = PBXBuildFile; fileRef = A05A27ACEE25D03EEA8B4860E5F29614 /* pem.c */; };
+		D0330CE00DD2B6DD3EDFBEC51088020B /* md.c in Sources */ = {isa = PBXBuildFile; fileRef = 8F4491F1D6AD1BA4AEC86FAF8519478F /* md.c */; };
+		D040FFDC6EB5073563FA85F649882548 /* gcm.h in Headers */ = {isa = PBXBuildFile; fileRef = D29DC9A62C211F602A7473DD531EE2D8 /* gcm.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		D13AB75156430022EDC283FFA3EE308C /* Logan.h in Headers */ = {isa = PBXBuildFile; fileRef = A579F2E238DD9D663E72A7180F99D17F /* Logan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D13ECFFA956C5FB9F9B7DA8C78CACB08 /* ecp.c in Sources */ = {isa = PBXBuildFile; fileRef = 59A7BDAC212496090C11DF23429D29BC /* ecp.c */; };
+		D2B75AF2245B69EAB8D7EAF9F2D69470 /* padlock.c in Sources */ = {isa = PBXBuildFile; fileRef = F01D8A7D1FAE94D29B71CEBA6DE3A0EA /* padlock.c */; };
+		D520589F7F068BE980995A93A4DA1F72 /* compat-1.3.h in Headers */ = {isa = PBXBuildFile; fileRef = A325921356CD6AB847A4E2F18420C9DC /* compat-1.3.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		D52DF8EE528226A969018367B9F4B73B /* x509_csr.c in Sources */ = {isa = PBXBuildFile; fileRef = 13543E2711C5CDF8B65E1583C77FFB8D /* x509_csr.c */; };
+		D532855E6691175626FCD1F8040AF5D7 /* ecp.h in Headers */ = {isa = PBXBuildFile; fileRef = 67D5ADB66C7286F096E61F4E7F56C8AB /* ecp.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		D6F2D624510823CAC0590C4DFD4F2DA4 /* base_util.h in Headers */ = {isa = PBXBuildFile; fileRef = 96A30BAEBD36E5A9882563D2CC9C0F4A /* base_util.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D729E29E44E5D56601DC213689DD4BD8 /* ctr_drbg.h in Headers */ = {isa = PBXBuildFile; fileRef = B1A01142D4F972533A32D9B4B8576E9D /* ctr_drbg.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		D9829B275976AC7B40C384426E643F1E /* pkparse.c in Sources */ = {isa = PBXBuildFile; fileRef = 87C8A69FACF3582D97EB945B15607A2F /* pkparse.c */; };
+		DB1AA3172645689A34161519E851CCB4 /* clogan_status.h in Headers */ = {isa = PBXBuildFile; fileRef = 73A5E9B8FC52687306893BDEB074452C /* clogan_status.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DE6AC72A3F6E936EFA712C5625B75A5D /* x509_crt.c in Sources */ = {isa = PBXBuildFile; fileRef = 2D8FEC1480F451AD0D8302EB3A0E4EFC /* x509_crt.c */; };
+		DF09095319751E7E1B1C7F60809E248F /* asn1write.c in Sources */ = {isa = PBXBuildFile; fileRef = 2B0342B8293620A7585708F711896160 /* asn1write.c */; };
+		DF866212A45414B4850AFA434C2591E0 /* md.h in Headers */ = {isa = PBXBuildFile; fileRef = B1DA79E33F66B3B17C6B44792E4C1973 /* md.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E208426C28C0AD24DD26560213618449 /* x509.c in Sources */ = {isa = PBXBuildFile; fileRef = 343415D947FE07203F57ED7156EF7171 /* x509.c */; };
+		E2148C173BCF2DD53DEEED30D4E901C5 /* aes.h in Headers */ = {isa = PBXBuildFile; fileRef = 90CAE10246B09A05937E57612A9899CB /* aes.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E2D33125E7211F1BF1108015DAD9D00A /* pkcs12.c in Sources */ = {isa = PBXBuildFile; fileRef = CB15FB7F73512802457AEE7399542117 /* pkcs12.c */; };
+		E433EA28214B841197F92AD8AC8C64F5 /* des.h in Headers */ = {isa = PBXBuildFile; fileRef = 696B323AEBA4C9E6B84D87E3026C937B /* des.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E57F19CB2F6E5773C43D330D9B19197E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		E7679E7EABD698EB7B3F32D0631B828B /* console_util.h in Headers */ = {isa = PBXBuildFile; fileRef = 372CB97FB75949785E998951A6512F79 /* console_util.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E881304019FE5290E66940B5ACE44DB4 /* ecp_curves.c in Sources */ = {isa = PBXBuildFile; fileRef = 8A2BC513C65C32BEE688A0054DBF61B5 /* ecp_curves.c */; };
+		E8E3A9D9B0D885B817F4FA67409EC81E /* cmac.c in Sources */ = {isa = PBXBuildFile; fileRef = 04E5D5E2FB6A0AD92D678D1FB6771671 /* cmac.c */; };
+		EB735DE0C5202C0B9EB5AC80A689BF6C /* cipher_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 71465A1F98D331BE6531E7A27A48DE5D /* cipher_internal.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		EC7AFB0B8D6A39C919B309C8AA49C9CA /* certs.c in Sources */ = {isa = PBXBuildFile; fileRef = 2A122A28D2FF756F86F673C7EEC88CF3 /* certs.c */; };
+		EF98814159BCA8779BEC9BCB0B91E1FD /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = BA9AD258D83DE9A459B8E22034F18F2E /* sha1.c */; };
+		F169FC23249F523864BB113C40747B2E /* ccm.h in Headers */ = {isa = PBXBuildFile; fileRef = BCDA3A1B833B3EE97C5356632B4A7E42 /* ccm.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		F393F25EA0EFA247150F942884E6933D /* ssl_ticket.h in Headers */ = {isa = PBXBuildFile; fileRef = 89A9834C2E15B461B6851E0713F69705 /* ssl_ticket.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		F66853DB31ADC2A04DB234C19C32B7AB /* ssl_cache.c in Sources */ = {isa = PBXBuildFile; fileRef = EC2D616CB613441F28F2A9956BA8CEB2 /* ssl_cache.c */; };
+		F82F9D20E1F054D9EEDD5893BBA0A55C /* cipher.h in Headers */ = {isa = PBXBuildFile; fileRef = F612F8F2F1074DD8B83DDAA01F7B3330 /* cipher.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		F9141E6686B07CB891781A1D0419E71D /* pk.h in Headers */ = {isa = PBXBuildFile; fileRef = D525ADAC7863CDC0F73E0D101F270C92 /* pk.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		FD888600DB3050564E32F0A92CF416D1 /* cmac.h in Headers */ = {isa = PBXBuildFile; fileRef = DFD764CAF6F52C451D7F9409BF802E47 /* cmac.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		FF7AAF08DDD9B9FC0A17E512A0CEBAA4 /* console_util.c in Sources */ = {isa = PBXBuildFile; fileRef = BAD6768C6F1DD022A07DCE913DA39CF8 /* console_util.c */; };
+		FF9693DDC57FC8C3ED0E9F04E89AB72D /* ctr_drbg.c in Sources */ = {isa = PBXBuildFile; fileRef = 0F2832DA0B8474E1477B3C9668876293 /* ctr_drbg.c */; };
+		FFF1665FBCF22E8A3118AC367012801A /* x509_create.c in Sources */ = {isa = PBXBuildFile; fileRef = 61950522162FF9ED63AE762A52D8EBFA /* x509_create.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		477F128AB1CD9FF20B4E9E1FCA01AE4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 86ACD7B206DB4007999F27E52ED4B5E5;
+			remoteInfo = Logan;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00D3DF8BF02C79EFE950F5ED3D5770D8 /* sha512.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sha512.h; path = Logan/mbedtls/include/mbedtls/sha512.h; sourceTree = "<group>"; };
+		013E7D9878AE72904E3F1E919A938908 /* Pods-SNLogger-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SNLogger-frameworks.sh"; sourceTree = "<group>"; };
+		0180B14A3F29666EADB5C5506081B95A /* Logan-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Logan-dummy.m"; sourceTree = "<group>"; };
+		039E0E016C6B91F9ACB310038AC234B4 /* ecdh.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ecdh.c; path = Logan/mbedtls/library/ecdh.c; sourceTree = "<group>"; };
+		043C73B57392351E285144372391EC9B /* ecjpake.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ecjpake.c; path = Logan/mbedtls/library/ecjpake.c; sourceTree = "<group>"; };
+		04E5D5E2FB6A0AD92D678D1FB6771671 /* cmac.c */ = {isa = PBXFileReference; includeInIndex = 1; name = cmac.c; path = Logan/mbedtls/library/cmac.c; sourceTree = "<group>"; };
+		0777603F6DBB547DBC6AAD41EC72F2D5 /* main.c */ = {isa = PBXFileReference; includeInIndex = 1; name = main.c; path = Logan/Clogan/main.c; sourceTree = "<group>"; };
+		08BB4D49E82DAEEADB932E29242EC22C /* Pods-SNLogger.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SNLogger.modulemap"; sourceTree = "<group>"; };
+		0E451920A76E455E76844D0D790497C3 /* camellia.c */ = {isa = PBXFileReference; includeInIndex = 1; name = camellia.c; path = Logan/mbedtls/library/camellia.c; sourceTree = "<group>"; };
+		0F2832DA0B8474E1477B3C9668876293 /* ctr_drbg.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ctr_drbg.c; path = Logan/mbedtls/library/ctr_drbg.c; sourceTree = "<group>"; };
+		0F7CB1B1A9AAE54A46EB0428CFE0EC0C /* ssl_srv.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ssl_srv.c; path = Logan/mbedtls/library/ssl_srv.c; sourceTree = "<group>"; };
+		107E0A2F536F56FCF9022AB51FDDACDB /* blowfish.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = blowfish.h; path = Logan/mbedtls/include/mbedtls/blowfish.h; sourceTree = "<group>"; };
+		10F4210C5CC6913984B9D6B0EC6B19AC /* threading.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = threading.h; path = Logan/mbedtls/include/mbedtls/threading.h; sourceTree = "<group>"; };
+		12F79EEC1A6BFB6A492176BA038FF4FA /* aesni.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aesni.h; path = Logan/mbedtls/include/mbedtls/aesni.h; sourceTree = "<group>"; };
+		13543E2711C5CDF8B65E1583C77FFB8D /* x509_csr.c */ = {isa = PBXFileReference; includeInIndex = 1; name = x509_csr.c; path = Logan/mbedtls/library/x509_csr.c; sourceTree = "<group>"; };
+		136EC5DD19B3C7D9EA0F3744EAD5E879 /* havege.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = havege.h; path = Logan/mbedtls/include/mbedtls/havege.h; sourceTree = "<group>"; };
+		146E484D53F3DC1BF9D7545C84572E33 /* pkcs11.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pkcs11.h; path = Logan/mbedtls/include/mbedtls/pkcs11.h; sourceTree = "<group>"; };
+		171B7149D752C19786B7F6AAFF09E3CE /* memory_buffer_alloc.c */ = {isa = PBXFileReference; includeInIndex = 1; name = memory_buffer_alloc.c; path = Logan/mbedtls/library/memory_buffer_alloc.c; sourceTree = "<group>"; };
+		1A281CB87F4BA31AB621F6693D5E2FD6 /* asn1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = asn1.h; path = Logan/mbedtls/include/mbedtls/asn1.h; sourceTree = "<group>"; };
+		1AAB0E82C8B69958C037B06034496CD3 /* ccm.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ccm.c; path = Logan/mbedtls/library/ccm.c; sourceTree = "<group>"; };
+		1C25720D8D523F28A2D97191BC58235C /* oid.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = oid.h; path = Logan/mbedtls/include/mbedtls/oid.h; sourceTree = "<group>"; };
+		1D7148CC0DD8F94028F07F8FD41F7A47 /* directory_util.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = directory_util.h; path = Logan/Clogan/directory_util.h; sourceTree = "<group>"; };
+		1EF61E5C278184360F10672AD5514AC9 /* clogan_core.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = clogan_core.h; path = Logan/Clogan/clogan_core.h; sourceTree = "<group>"; };
+		1FE0FD25F5048B7A72323D216331F34E /* x509write_csr.c */ = {isa = PBXFileReference; includeInIndex = 1; name = x509write_csr.c; path = Logan/mbedtls/library/x509write_csr.c; sourceTree = "<group>"; };
+		209BBFEBA29F6FACC2E93C191422FA58 /* version.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = version.h; path = Logan/mbedtls/include/mbedtls/version.h; sourceTree = "<group>"; };
+		225A602650E94565110B45CF1A6D9158 /* pk_internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pk_internal.h; path = Logan/mbedtls/include/mbedtls/pk_internal.h; sourceTree = "<group>"; };
+		25546FFC5B97506119C5208DFC349FB8 /* ecjpake.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ecjpake.h; path = Logan/mbedtls/include/mbedtls/ecjpake.h; sourceTree = "<group>"; };
+		2625E02DCED16FC86D7829066F1D4FAF /* ripemd160.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ripemd160.c; path = Logan/mbedtls/library/ripemd160.c; sourceTree = "<group>"; };
+		26FC43BF1DBF238A5303E4ACFA3FEAD7 /* ecp_internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ecp_internal.h; path = Logan/mbedtls/include/mbedtls/ecp_internal.h; sourceTree = "<group>"; };
+		277FD1A053A9236553BDBC69E8FC1CC5 /* Pods-SNLogger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SNLogger.debug.xcconfig"; sourceTree = "<group>"; };
+		299ED13A6F3620D54C34AA9B3352F54F /* md5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = md5.h; path = Logan/mbedtls/include/mbedtls/md5.h; sourceTree = "<group>"; };
+		2A122A28D2FF756F86F673C7EEC88CF3 /* certs.c */ = {isa = PBXFileReference; includeInIndex = 1; name = certs.c; path = Logan/mbedtls/library/certs.c; sourceTree = "<group>"; };
+		2A257993445F24AE1FEB9243CF92B365 /* Logan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Logan.debug.xcconfig; sourceTree = "<group>"; };
+		2B0342B8293620A7585708F711896160 /* asn1write.c */ = {isa = PBXFileReference; includeInIndex = 1; name = asn1write.c; path = Logan/mbedtls/library/asn1write.c; sourceTree = "<group>"; };
+		2B10833ECCE4463B038DDB2C917A758F /* blowfish.c */ = {isa = PBXFileReference; includeInIndex = 1; name = blowfish.c; path = Logan/mbedtls/library/blowfish.c; sourceTree = "<group>"; };
+		2B120BE5D1D1AE63C0AACB958E0C20F6 /* memory_buffer_alloc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = memory_buffer_alloc.h; path = Logan/mbedtls/include/mbedtls/memory_buffer_alloc.h; sourceTree = "<group>"; };
+		2BF852A038425024E957590613BB1077 /* ecdh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ecdh.h; path = Logan/mbedtls/include/mbedtls/ecdh.h; sourceTree = "<group>"; };
+		2D8FEC1480F451AD0D8302EB3A0E4EFC /* x509_crt.c */ = {isa = PBXFileReference; includeInIndex = 1; name = x509_crt.c; path = Logan/mbedtls/library/x509_crt.c; sourceTree = "<group>"; };
+		2DC093F37AF0C21FD378D15088912002 /* gcm.c */ = {isa = PBXFileReference; includeInIndex = 1; name = gcm.c; path = Logan/mbedtls/library/gcm.c; sourceTree = "<group>"; };
+		343415D947FE07203F57ED7156EF7171 /* x509.c */ = {isa = PBXFileReference; includeInIndex = 1; name = x509.c; path = Logan/mbedtls/library/x509.c; sourceTree = "<group>"; };
+		347B26E15FE4DCD30A0EAC12417D6150 /* json_util.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = json_util.h; path = Logan/Clogan/json_util.h; sourceTree = "<group>"; };
+		372CB97FB75949785E998951A6512F79 /* console_util.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = console_util.h; path = Logan/Clogan/console_util.h; sourceTree = "<group>"; };
+		3F02ADB7F3410EE75A3E046874F04093 /* ssl_internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl_internal.h; path = Logan/mbedtls/include/mbedtls/ssl_internal.h; sourceTree = "<group>"; };
+		419EB832167875FF0CCB7509829F3417 /* Pods-SNLogger-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SNLogger-dummy.m"; sourceTree = "<group>"; };
+		435150BDD5580C417EC44478F27D9EE1 /* havege.c */ = {isa = PBXFileReference; includeInIndex = 1; name = havege.c; path = Logan/mbedtls/library/havege.c; sourceTree = "<group>"; };
+		46BC717D11509AB39F0D639EB601F7AF /* x509write_crt.c */ = {isa = PBXFileReference; includeInIndex = 1; name = x509write_crt.c; path = Logan/mbedtls/library/x509write_crt.c; sourceTree = "<group>"; };
+		487F3D25E1EDD74576521CB784019E2E /* Logan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Logan.release.xcconfig; sourceTree = "<group>"; };
+		4A4018D713F2B69D056CBD3666A652AB /* dhm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dhm.h; path = Logan/mbedtls/include/mbedtls/dhm.h; sourceTree = "<group>"; };
+		4B7F0EAAED734FFAC2AB8DD0F81BA8AE /* pk_wrap.c */ = {isa = PBXFileReference; includeInIndex = 1; name = pk_wrap.c; path = Logan/mbedtls/library/pk_wrap.c; sourceTree = "<group>"; };
+		4CB4811C5F1E187D4E3555B105598E8C /* sha256.c */ = {isa = PBXFileReference; includeInIndex = 1; name = sha256.c; path = Logan/mbedtls/library/sha256.c; sourceTree = "<group>"; };
+		4D0F80B0FCC05E6DCA0C020F9E7DA4A7 /* logan_config.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = logan_config.h; path = Logan/Clogan/logan_config.h; sourceTree = "<group>"; };
+		4F5C9928B109E6F41A4B3F2F5580CC84 /* cipher.c */ = {isa = PBXFileReference; includeInIndex = 1; name = cipher.c; path = Logan/mbedtls/library/cipher.c; sourceTree = "<group>"; };
+		4F6AC84C4D08485D93A888A4B9FC2BC2 /* dhm.c */ = {isa = PBXFileReference; includeInIndex = 1; name = dhm.c; path = Logan/mbedtls/library/dhm.c; sourceTree = "<group>"; };
+		518169F224F8DDEDC6089AA5A7482265 /* hmac_drbg.c */ = {isa = PBXFileReference; includeInIndex = 1; name = hmac_drbg.c; path = Logan/mbedtls/library/hmac_drbg.c; sourceTree = "<group>"; };
+		5430F557D4911C56ABB78D559E210057 /* cJSON.c */ = {isa = PBXFileReference; includeInIndex = 1; name = cJSON.c; path = Logan/Clogan/cJSON.c; sourceTree = "<group>"; };
+		55CE5768A687C3478E229A3B2962F822 /* Pods-SNLogger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SNLogger.release.xcconfig"; sourceTree = "<group>"; };
+		5940A4DA80A30F329944C02A9F233CA2 /* x509_crl.c */ = {isa = PBXFileReference; includeInIndex = 1; name = x509_crl.c; path = Logan/mbedtls/library/x509_crl.c; sourceTree = "<group>"; };
+		596089E103CA1753D7A37BD854E89C17 /* Pods-SNLogger-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SNLogger-Info.plist"; sourceTree = "<group>"; };
+		59A7BDAC212496090C11DF23429D29BC /* ecp.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ecp.c; path = Logan/mbedtls/library/ecp.c; sourceTree = "<group>"; };
+		59D09472384DE917CAA794F7FFE15CF1 /* net_sockets.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = net_sockets.h; path = Logan/mbedtls/include/mbedtls/net_sockets.h; sourceTree = "<group>"; };
+		5AE9DDDD0C22505427B67CB19FC8A841 /* hmac_drbg.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hmac_drbg.h; path = Logan/mbedtls/include/mbedtls/hmac_drbg.h; sourceTree = "<group>"; };
+		5BB4AF85D47642F3D37E92746A363D7A /* x509_csr.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = x509_csr.h; path = Logan/mbedtls/include/mbedtls/x509_csr.h; sourceTree = "<group>"; };
+		5C43678C4533BE3AA867AF6ACAB63FB6 /* md5.c */ = {isa = PBXFileReference; includeInIndex = 1; name = md5.c; path = Logan/mbedtls/library/md5.c; sourceTree = "<group>"; };
+		5D238623D472863BE8E12846BD3579DA /* directory_util.c */ = {isa = PBXFileReference; includeInIndex = 1; name = directory_util.c; path = Logan/Clogan/directory_util.c; sourceTree = "<group>"; };
+		61950522162FF9ED63AE762A52D8EBFA /* x509_create.c */ = {isa = PBXFileReference; includeInIndex = 1; name = x509_create.c; path = Logan/mbedtls/library/x509_create.c; sourceTree = "<group>"; };
+		61AA7ED1E860075767A8BB8FF05F4D45 /* sha256.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sha256.h; path = Logan/mbedtls/include/mbedtls/sha256.h; sourceTree = "<group>"; };
+		660F145E77290FAD237947E6C0F7F554 /* construct_data.c */ = {isa = PBXFileReference; includeInIndex = 1; name = construct_data.c; path = Logan/Clogan/construct_data.c; sourceTree = "<group>"; };
+		67D5ADB66C7286F096E61F4E7F56C8AB /* ecp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ecp.h; path = Logan/mbedtls/include/mbedtls/ecp.h; sourceTree = "<group>"; };
+		67E4ACF0767AC6211223FD87D1972024 /* ssl_cookie.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ssl_cookie.c; path = Logan/mbedtls/library/ssl_cookie.c; sourceTree = "<group>"; };
+		696B323AEBA4C9E6B84D87E3026C937B /* des.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = des.h; path = Logan/mbedtls/include/mbedtls/des.h; sourceTree = "<group>"; };
+		6A9F5CC675ECEE5DB8BBCC584730E57B /* pkwrite.c */ = {isa = PBXFileReference; includeInIndex = 1; name = pkwrite.c; path = Logan/mbedtls/library/pkwrite.c; sourceTree = "<group>"; };
+		6BCCE21E758A16132359ABB4EFAB6E0B /* md_internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = md_internal.h; path = Logan/mbedtls/include/mbedtls/md_internal.h; sourceTree = "<group>"; };
+		6E3AD0042BCCA67022AD901A7293749A /* debug.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = debug.h; path = Logan/mbedtls/include/mbedtls/debug.h; sourceTree = "<group>"; };
+		6ED7D454976FFD49BE7E81C4AFA5DBEB /* md4.c */ = {isa = PBXFileReference; includeInIndex = 1; name = md4.c; path = Logan/mbedtls/library/md4.c; sourceTree = "<group>"; };
+		6FB866686A8CCA32B2222996EB98AE94 /* arc4.c */ = {isa = PBXFileReference; includeInIndex = 1; name = arc4.c; path = Logan/mbedtls/library/arc4.c; sourceTree = "<group>"; };
+		704A5F780E2E32F5AE312331CAF4DBCB /* aes_util.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aes_util.h; path = Logan/Clogan/aes_util.h; sourceTree = "<group>"; };
+		70ADBFDDC88B7A1EFCBAD9CCCE8109DE /* xtea.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = xtea.h; path = Logan/mbedtls/include/mbedtls/xtea.h; sourceTree = "<group>"; };
+		71465A1F98D331BE6531E7A27A48DE5D /* cipher_internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cipher_internal.h; path = Logan/mbedtls/include/mbedtls/cipher_internal.h; sourceTree = "<group>"; };
+		717D16BA100DDF74900296570A77B28B /* md_wrap.c */ = {isa = PBXFileReference; includeInIndex = 1; name = md_wrap.c; path = Logan/mbedtls/library/md_wrap.c; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		73A5E9B8FC52687306893BDEB074452C /* clogan_status.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = clogan_status.h; path = Logan/Clogan/clogan_status.h; sourceTree = "<group>"; };
+		73C3E7BA3F22BBDED407103B0F862C6B /* ecdsa.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ecdsa.c; path = Logan/mbedtls/library/ecdsa.c; sourceTree = "<group>"; };
+		74B8D419514D13A4969F3E6AF073205E /* Pods-SNLogger-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SNLogger-acknowledgements.markdown"; sourceTree = "<group>"; };
+		760B9DC839B455CC7FFCF7CCD119A963 /* config.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = config.h; path = Logan/mbedtls/include/mbedtls/config.h; sourceTree = "<group>"; };
+		76328B2CDD41E5B4948D532141C6104F /* sha512.c */ = {isa = PBXFileReference; includeInIndex = 1; name = sha512.c; path = Logan/mbedtls/library/sha512.c; sourceTree = "<group>"; };
+		7A27132850CB79B5CA9293203A33437D /* timing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = timing.h; path = Logan/mbedtls/include/mbedtls/timing.h; sourceTree = "<group>"; };
+		7A6CEF6B103E06852CFB9407D144A3B4 /* pk.c */ = {isa = PBXFileReference; includeInIndex = 1; name = pk.c; path = Logan/mbedtls/library/pk.c; sourceTree = "<group>"; };
+		7FEE88E3752B5E084A90785D30D702AC /* pkcs11.c */ = {isa = PBXFileReference; includeInIndex = 1; name = pkcs11.c; path = Logan/mbedtls/library/pkcs11.c; sourceTree = "<group>"; };
+		803F3DFF1F4DF71AABC33783A6C1C103 /* Logan-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Logan-umbrella.h"; sourceTree = "<group>"; };
+		81891E8A5D2864281CB18B42E9DFE6BC /* aesni.c */ = {isa = PBXFileReference; includeInIndex = 1; name = aesni.c; path = Logan/mbedtls/library/aesni.c; sourceTree = "<group>"; };
+		820EFF6114B34F0B5B8ECDE01495DC7C /* clogan_core.c */ = {isa = PBXFileReference; includeInIndex = 1; name = clogan_core.c; path = Logan/Clogan/clogan_core.c; sourceTree = "<group>"; };
+		8309D8459F73D4C981FB6D6A58BDB1D2 /* ripemd160.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ripemd160.h; path = Logan/mbedtls/include/mbedtls/ripemd160.h; sourceTree = "<group>"; };
+		85162FAB2B183322495F00DD391301E1 /* arc4.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = arc4.h; path = Logan/mbedtls/include/mbedtls/arc4.h; sourceTree = "<group>"; };
+		85402B11D51710A7622B248B3A694A0B /* check_config.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = check_config.h; path = Logan/mbedtls/include/mbedtls/check_config.h; sourceTree = "<group>"; };
+		8679DCC3DF7D67DA6650E7DB90C9636B /* camellia.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = camellia.h; path = Logan/mbedtls/include/mbedtls/camellia.h; sourceTree = "<group>"; };
+		87C8A69FACF3582D97EB945B15607A2F /* pkparse.c */ = {isa = PBXFileReference; includeInIndex = 1; name = pkparse.c; path = Logan/mbedtls/library/pkparse.c; sourceTree = "<group>"; };
+		89A9834C2E15B461B6851E0713F69705 /* ssl_ticket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl_ticket.h; path = Logan/mbedtls/include/mbedtls/ssl_ticket.h; sourceTree = "<group>"; };
+		8A2BC513C65C32BEE688A0054DBF61B5 /* ecp_curves.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ecp_curves.c; path = Logan/mbedtls/library/ecp_curves.c; sourceTree = "<group>"; };
+		8AF9932778F2FB84CEAE51AA7EDA9E29 /* version_features.c */ = {isa = PBXFileReference; includeInIndex = 1; name = version_features.c; path = Logan/mbedtls/library/version_features.c; sourceTree = "<group>"; };
+		8D3925DE73F12F022D9BA1691FF00422 /* Pods-SNLogger */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SNLogger"; path = Pods_SNLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F4491F1D6AD1BA4AEC86FAF8519478F /* md.c */ = {isa = PBXFileReference; includeInIndex = 1; name = md.c; path = Logan/mbedtls/library/md.c; sourceTree = "<group>"; };
+		90CAE10246B09A05937E57612A9899CB /* aes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aes.h; path = Logan/mbedtls/include/mbedtls/aes.h; sourceTree = "<group>"; };
+		91B748F71ABADDD67E22291AF0CDF74F /* rsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rsa.h; path = Logan/mbedtls/include/mbedtls/rsa.h; sourceTree = "<group>"; };
+		91E3B0D3BDFC4321DE3B5162333C96A0 /* padlock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = padlock.h; path = Logan/mbedtls/include/mbedtls/padlock.h; sourceTree = "<group>"; };
+		92A091E8115F29F260C6B519DAD11505 /* zlib_util.c */ = {isa = PBXFileReference; includeInIndex = 1; name = zlib_util.c; path = Logan/Clogan/zlib_util.c; sourceTree = "<group>"; };
+		937FD8B98426754004D9657E88D1E9F0 /* mmap_util.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mmap_util.h; path = Logan/Clogan/mmap_util.h; sourceTree = "<group>"; };
+		9624E62EB9AD8BD0E0D076950560910F /* ssl_cookie.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl_cookie.h; path = Logan/mbedtls/include/mbedtls/ssl_cookie.h; sourceTree = "<group>"; };
+		96A30BAEBD36E5A9882563D2CC9C0F4A /* base_util.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = base_util.h; path = Logan/Clogan/base_util.h; sourceTree = "<group>"; };
+		96AB4052ADB411A8EA922EBBF09EC320 /* Pods-SNLogger-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SNLogger-umbrella.h"; sourceTree = "<group>"; };
+		96CE608D6727DC10D8140CA6D61E460D /* xtea.c */ = {isa = PBXFileReference; includeInIndex = 1; name = xtea.c; path = Logan/mbedtls/library/xtea.c; sourceTree = "<group>"; };
+		9700452B38BAC798FA4EFD6818F6ECE6 /* sha1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sha1.h; path = Logan/mbedtls/include/mbedtls/sha1.h; sourceTree = "<group>"; };
+		9718CD1B784A08E5C8BE51A3221A77EB /* net_sockets.c */ = {isa = PBXFileReference; includeInIndex = 1; name = net_sockets.c; path = Logan/mbedtls/library/net_sockets.c; sourceTree = "<group>"; };
+		98649F8292F71B5D2684B1528FC294F1 /* x509_crt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = x509_crt.h; path = Logan/mbedtls/include/mbedtls/x509_crt.h; sourceTree = "<group>"; };
+		98689B4FA562142A144BCB3B0ED94322 /* ssl_ciphersuites.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl_ciphersuites.h; path = Logan/mbedtls/include/mbedtls/ssl_ciphersuites.h; sourceTree = "<group>"; };
+		992A8E86D5D81A433716250375991BE6 /* Pods-SNLogger-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SNLogger-acknowledgements.plist"; sourceTree = "<group>"; };
+		9AD741CD3EFB0ACAE12E277ACDEB7C70 /* platform.c */ = {isa = PBXFileReference; includeInIndex = 1; name = platform.c; path = Logan/mbedtls/library/platform.c; sourceTree = "<group>"; };
+		9B76A38EAAEFFECCA473B470B5FB4745 /* bignum.c */ = {isa = PBXFileReference; includeInIndex = 1; name = bignum.c; path = Logan/mbedtls/library/bignum.c; sourceTree = "<group>"; };
+		9BF8F3B841C436B322C82913FB140BCE /* net.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = net.h; path = Logan/mbedtls/include/mbedtls/net.h; sourceTree = "<group>"; };
+		9C49DAA1117AD2FADBC064DD6DCCDF81 /* pkcs12.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pkcs12.h; path = Logan/mbedtls/include/mbedtls/pkcs12.h; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A05A27ACEE25D03EEA8B4860E5F29614 /* pem.c */ = {isa = PBXFileReference; includeInIndex = 1; name = pem.c; path = Logan/mbedtls/library/pem.c; sourceTree = "<group>"; };
+		A096237B5AEC3DAC9078CCEEF469EE2A /* md2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = md2.h; path = Logan/mbedtls/include/mbedtls/md2.h; sourceTree = "<group>"; };
+		A1B30721027098153B1AC7A11F1C0D3A /* rsa.c */ = {isa = PBXFileReference; includeInIndex = 1; name = rsa.c; path = Logan/mbedtls/library/rsa.c; sourceTree = "<group>"; };
+		A1EA3CFDA663B5CBF42FBA64A96AD115 /* ssl_cache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl_cache.h; path = Logan/mbedtls/include/mbedtls/ssl_cache.h; sourceTree = "<group>"; };
+		A325921356CD6AB847A4E2F18420C9DC /* compat-1.3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "compat-1.3.h"; path = "Logan/mbedtls/include/mbedtls/compat-1.3.h"; sourceTree = "<group>"; };
+		A579F2E238DD9D663E72A7180F99D17F /* Logan.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Logan.h; path = Logan/iOS/Logan.h; sourceTree = "<group>"; };
+		A5A1F02C162B5A6AC5DE33411F6333BC /* asn1parse.c */ = {isa = PBXFileReference; includeInIndex = 1; name = asn1parse.c; path = Logan/mbedtls/library/asn1parse.c; sourceTree = "<group>"; };
+		A81D257F7BD2DC8C5E50837110527255 /* ssl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl.h; path = Logan/mbedtls/include/mbedtls/ssl.h; sourceTree = "<group>"; };
+		A9780F86C22EF502F5639185A85FAB4E /* oid.c */ = {isa = PBXFileReference; includeInIndex = 1; name = oid.c; path = Logan/mbedtls/library/oid.c; sourceTree = "<group>"; };
+		A9809FE77D273A2EC7F46CEAF2CCC534 /* construct_data.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = construct_data.h; path = Logan/Clogan/construct_data.h; sourceTree = "<group>"; };
+		AA09684ECB3DA565F8EE77EEE6A92CD6 /* asn1write.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = asn1write.h; path = Logan/mbedtls/include/mbedtls/asn1write.h; sourceTree = "<group>"; };
+		ABD7B98BCC7D2CE19099B95759B8B1D7 /* debug.c */ = {isa = PBXFileReference; includeInIndex = 1; name = debug.c; path = Logan/mbedtls/library/debug.c; sourceTree = "<group>"; };
+		B1A01142D4F972533A32D9B4B8576E9D /* ctr_drbg.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ctr_drbg.h; path = Logan/mbedtls/include/mbedtls/ctr_drbg.h; sourceTree = "<group>"; };
+		B1C05D220DB08AAFD5C90A3040923FF7 /* bignum.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bignum.h; path = Logan/mbedtls/include/mbedtls/bignum.h; sourceTree = "<group>"; };
+		B1CB621653548CFE3EF3D8939A3D4BFA /* platform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = platform.h; path = Logan/mbedtls/include/mbedtls/platform.h; sourceTree = "<group>"; };
+		B1DA79E33F66B3B17C6B44792E4C1973 /* md.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = md.h; path = Logan/mbedtls/include/mbedtls/md.h; sourceTree = "<group>"; };
+		B2D99665D7D6A5238D54F07A913C775D /* ecdsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ecdsa.h; path = Logan/mbedtls/include/mbedtls/ecdsa.h; sourceTree = "<group>"; };
+		B3F72B9E3A7F8AE990E2C40CF05B1160 /* zlib_util.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zlib_util.h; path = Logan/Clogan/zlib_util.h; sourceTree = "<group>"; };
+		B5C49B7EC07C35C80350D3B34C9233E3 /* md4.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = md4.h; path = Logan/mbedtls/include/mbedtls/md4.h; sourceTree = "<group>"; };
+		BA9AD258D83DE9A459B8E22034F18F2E /* sha1.c */ = {isa = PBXFileReference; includeInIndex = 1; name = sha1.c; path = Logan/mbedtls/library/sha1.c; sourceTree = "<group>"; };
+		BAD6768C6F1DD022A07DCE913DA39CF8 /* console_util.c */ = {isa = PBXFileReference; includeInIndex = 1; name = console_util.c; path = Logan/Clogan/console_util.c; sourceTree = "<group>"; };
+		BCDA3A1B833B3EE97C5356632B4A7E42 /* ccm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ccm.h; path = Logan/mbedtls/include/mbedtls/ccm.h; sourceTree = "<group>"; };
+		BCE4521745FDD3ED6FEFA492B96C4361 /* pkcs5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pkcs5.h; path = Logan/mbedtls/include/mbedtls/pkcs5.h; sourceTree = "<group>"; };
+		BE4DFE0EC83181D8030FD637E175381D /* md2.c */ = {isa = PBXFileReference; includeInIndex = 1; name = md2.c; path = Logan/mbedtls/library/md2.c; sourceTree = "<group>"; };
+		BEF4B2BCD86F83F73849AED3C9089D35 /* aes.c */ = {isa = PBXFileReference; includeInIndex = 1; name = aes.c; path = Logan/mbedtls/library/aes.c; sourceTree = "<group>"; };
+		C0D771DCCDB31F39D30F5F8EDC8FE018 /* threading.c */ = {isa = PBXFileReference; includeInIndex = 1; name = threading.c; path = Logan/mbedtls/library/threading.c; sourceTree = "<group>"; };
+		C17561DB75EEC4FF9F0B5B03CB09A918 /* error.c */ = {isa = PBXFileReference; includeInIndex = 1; name = error.c; path = Logan/mbedtls/library/error.c; sourceTree = "<group>"; };
+		C28E80F9931F32D1E01D10B1212C2BC0 /* mmap_util.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mmap_util.c; path = Logan/Clogan/mmap_util.c; sourceTree = "<group>"; };
+		C3BA02106ED7E9816290696A9A9CEABD /* base64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = base64.h; path = Logan/mbedtls/include/mbedtls/base64.h; sourceTree = "<group>"; };
+		C4E0E0E692C3BBF7A8D0756C4960C5AD /* base64.c */ = {isa = PBXFileReference; includeInIndex = 1; name = base64.c; path = Logan/mbedtls/library/base64.c; sourceTree = "<group>"; };
+		C8F37CBEB36BCD95E1965281329A7AA2 /* des.c */ = {isa = PBXFileReference; includeInIndex = 1; name = des.c; path = Logan/mbedtls/library/des.c; sourceTree = "<group>"; };
+		C9D515C630ED52561E5E2D180C9B298A /* Logan.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Logan.m; path = Logan/iOS/Logan.m; sourceTree = "<group>"; };
+		CB15FB7F73512802457AEE7399542117 /* pkcs12.c */ = {isa = PBXFileReference; includeInIndex = 1; name = pkcs12.c; path = Logan/mbedtls/library/pkcs12.c; sourceTree = "<group>"; };
+		CC53B66C00B067174512460DB25509D1 /* Logan.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Logan.modulemap; sourceTree = "<group>"; };
+		D07011C1F115C8F622F283CCE8755CFD /* x509_crl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = x509_crl.h; path = Logan/mbedtls/include/mbedtls/x509_crl.h; sourceTree = "<group>"; };
+		D29DC9A62C211F602A7473DD531EE2D8 /* gcm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = gcm.h; path = Logan/mbedtls/include/mbedtls/gcm.h; sourceTree = "<group>"; };
+		D311CC3EE09A7470F74BE572E18897F9 /* Logan-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Logan-prefix.pch"; sourceTree = "<group>"; };
+		D525ADAC7863CDC0F73E0D101F270C92 /* pk.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pk.h; path = Logan/mbedtls/include/mbedtls/pk.h; sourceTree = "<group>"; };
+		D58136782D131CFC00521C97F71CB8B9 /* certs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = certs.h; path = Logan/mbedtls/include/mbedtls/certs.h; sourceTree = "<group>"; };
+		D60060173D297916189D47C29D7D4EFB /* error.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = error.h; path = Logan/mbedtls/include/mbedtls/error.h; sourceTree = "<group>"; };
+		D9AF512E1F822CB9823A47A33EB130C4 /* ssl_cli.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ssl_cli.c; path = Logan/mbedtls/library/ssl_cli.c; sourceTree = "<group>"; };
+		DAD79BC4E6C8118A729BBA84FCFFDAD1 /* entropy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = entropy.h; path = Logan/mbedtls/include/mbedtls/entropy.h; sourceTree = "<group>"; };
+		DDD76F5E1E642869E1BC2E4EF28AE335 /* ssl_ticket.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ssl_ticket.c; path = Logan/mbedtls/library/ssl_ticket.c; sourceTree = "<group>"; };
+		DDEB44197414BBEAC4C533AE97FA2980 /* platform_time.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = platform_time.h; path = Logan/mbedtls/include/mbedtls/platform_time.h; sourceTree = "<group>"; };
+		DF124098DE9785E9ABD90F4B60ADDF31 /* aes_util.c */ = {isa = PBXFileReference; includeInIndex = 1; name = aes_util.c; path = Logan/Clogan/aes_util.c; sourceTree = "<group>"; };
+		DFD764CAF6F52C451D7F9409BF802E47 /* cmac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cmac.h; path = Logan/mbedtls/include/mbedtls/cmac.h; sourceTree = "<group>"; };
+		E136CDE6799109B3CF75DC2B835EBE3C /* pkcs5.c */ = {isa = PBXFileReference; includeInIndex = 1; name = pkcs5.c; path = Logan/mbedtls/library/pkcs5.c; sourceTree = "<group>"; };
+		E7F6B17A8277DFCC984A461946AF5DB2 /* entropy.c */ = {isa = PBXFileReference; includeInIndex = 1; name = entropy.c; path = Logan/mbedtls/library/entropy.c; sourceTree = "<group>"; };
+		E8A45C50C46C0DB40935903B37799362 /* entropy_poll.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = entropy_poll.h; path = Logan/mbedtls/include/mbedtls/entropy_poll.h; sourceTree = "<group>"; };
+		E8CC366644F090AE7BBA2F02CEC2CB54 /* bn_mul.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bn_mul.h; path = Logan/mbedtls/include/mbedtls/bn_mul.h; sourceTree = "<group>"; };
+		E901A541A7B99CBFC03B6D462B6E97F8 /* x509.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = x509.h; path = Logan/mbedtls/include/mbedtls/x509.h; sourceTree = "<group>"; };
+		EB0272F489E7B22CF8F6DD00AF9C350E /* version.c */ = {isa = PBXFileReference; includeInIndex = 1; name = version.c; path = Logan/mbedtls/library/version.c; sourceTree = "<group>"; };
+		EB9FAB013E6C65FD7ED9297141B38ABF /* cipher_wrap.c */ = {isa = PBXFileReference; includeInIndex = 1; name = cipher_wrap.c; path = Logan/mbedtls/library/cipher_wrap.c; sourceTree = "<group>"; };
+		EC2D616CB613441F28F2A9956BA8CEB2 /* ssl_cache.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ssl_cache.c; path = Logan/mbedtls/library/ssl_cache.c; sourceTree = "<group>"; };
+		EEACDAA326D87B048CB97B0C356586B2 /* Logan-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Logan-Info.plist"; sourceTree = "<group>"; };
+		EF296A7529F1F856EA4EA422E65B2D0C /* ssl_ciphersuites.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ssl_ciphersuites.c; path = Logan/mbedtls/library/ssl_ciphersuites.c; sourceTree = "<group>"; };
+		EF34425F4C6708A129A99B40B34C9B75 /* entropy_poll.c */ = {isa = PBXFileReference; includeInIndex = 1; name = entropy_poll.c; path = Logan/mbedtls/library/entropy_poll.c; sourceTree = "<group>"; };
+		F01D8A7D1FAE94D29B71CEBA6DE3A0EA /* padlock.c */ = {isa = PBXFileReference; includeInIndex = 1; name = padlock.c; path = Logan/mbedtls/library/padlock.c; sourceTree = "<group>"; };
+		F3A8032B8D381EA9CE2F679781E7C792 /* json_util.c */ = {isa = PBXFileReference; includeInIndex = 1; name = json_util.c; path = Logan/Clogan/json_util.c; sourceTree = "<group>"; };
+		F4F7FC8B03DA6A1D52303A3B0B0677D8 /* cJSON.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cJSON.h; path = Logan/Clogan/cJSON.h; sourceTree = "<group>"; };
+		F612F8F2F1074DD8B83DDAA01F7B3330 /* cipher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cipher.h; path = Logan/mbedtls/include/mbedtls/cipher.h; sourceTree = "<group>"; };
+		F9B0CA47DD4B65CC17BE768A79C0BAC4 /* pem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pem.h; path = Logan/mbedtls/include/mbedtls/pem.h; sourceTree = "<group>"; };
+		F9B64C43EF28CDB9A202F2E34F58E8A3 /* ssl_tls.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ssl_tls.c; path = Logan/mbedtls/library/ssl_tls.c; sourceTree = "<group>"; };
+		FBFFF4E7BF62D2B524CF25225D38E4AD /* base_util.c */ = {isa = PBXFileReference; includeInIndex = 1; name = base_util.c; path = Logan/Clogan/base_util.c; sourceTree = "<group>"; };
+		FD770166A040230FF13515EE000983C5 /* Logan */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Logan; path = Logan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDA9EB56BDD32751E24DA77C504A7275 /* timing.c */ = {isa = PBXFileReference; includeInIndex = 1; name = timing.c; path = Logan/mbedtls/library/timing.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0E8F26069CB977517150CA82BC1199E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E57F19CB2F6E5773C43D330D9B19197E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0D2CCF891DEE68893E8961CBB0BBE6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43AACAC6DB50A43AD84FBAE63E094B44 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06495A7D0C581A88DF345A1647603A02 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD770166A040230FF13515EE000983C5 /* Logan */,
+				8D3925DE73F12F022D9BA1691FF00422 /* Pods-SNLogger */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0F2437481E869C4A609F0D98932FB9ED /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC53B66C00B067174512460DB25509D1 /* Logan.modulemap */,
+				0180B14A3F29666EADB5C5506081B95A /* Logan-dummy.m */,
+				EEACDAA326D87B048CB97B0C356586B2 /* Logan-Info.plist */,
+				D311CC3EE09A7470F74BE572E18897F9 /* Logan-prefix.pch */,
+				803F3DFF1F4DF71AABC33783A6C1C103 /* Logan-umbrella.h */,
+				2A257993445F24AE1FEB9243CF92B365 /* Logan.debug.xcconfig */,
+				487F3D25E1EDD74576521CB784019E2E /* Logan.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Logan";
+			sourceTree = "<group>";
+		};
+		219D05E920AF8C18E55F89175BB40DAE /* mbedtls */ = {
+			isa = PBXGroup;
+			children = (
+				BEF4B2BCD86F83F73849AED3C9089D35 /* aes.c */,
+				90CAE10246B09A05937E57612A9899CB /* aes.h */,
+				81891E8A5D2864281CB18B42E9DFE6BC /* aesni.c */,
+				12F79EEC1A6BFB6A492176BA038FF4FA /* aesni.h */,
+				6FB866686A8CCA32B2222996EB98AE94 /* arc4.c */,
+				85162FAB2B183322495F00DD391301E1 /* arc4.h */,
+				1A281CB87F4BA31AB621F6693D5E2FD6 /* asn1.h */,
+				A5A1F02C162B5A6AC5DE33411F6333BC /* asn1parse.c */,
+				2B0342B8293620A7585708F711896160 /* asn1write.c */,
+				AA09684ECB3DA565F8EE77EEE6A92CD6 /* asn1write.h */,
+				C4E0E0E692C3BBF7A8D0756C4960C5AD /* base64.c */,
+				C3BA02106ED7E9816290696A9A9CEABD /* base64.h */,
+				9B76A38EAAEFFECCA473B470B5FB4745 /* bignum.c */,
+				B1C05D220DB08AAFD5C90A3040923FF7 /* bignum.h */,
+				2B10833ECCE4463B038DDB2C917A758F /* blowfish.c */,
+				107E0A2F536F56FCF9022AB51FDDACDB /* blowfish.h */,
+				E8CC366644F090AE7BBA2F02CEC2CB54 /* bn_mul.h */,
+				0E451920A76E455E76844D0D790497C3 /* camellia.c */,
+				8679DCC3DF7D67DA6650E7DB90C9636B /* camellia.h */,
+				1AAB0E82C8B69958C037B06034496CD3 /* ccm.c */,
+				BCDA3A1B833B3EE97C5356632B4A7E42 /* ccm.h */,
+				2A122A28D2FF756F86F673C7EEC88CF3 /* certs.c */,
+				D58136782D131CFC00521C97F71CB8B9 /* certs.h */,
+				85402B11D51710A7622B248B3A694A0B /* check_config.h */,
+				4F5C9928B109E6F41A4B3F2F5580CC84 /* cipher.c */,
+				F612F8F2F1074DD8B83DDAA01F7B3330 /* cipher.h */,
+				71465A1F98D331BE6531E7A27A48DE5D /* cipher_internal.h */,
+				EB9FAB013E6C65FD7ED9297141B38ABF /* cipher_wrap.c */,
+				04E5D5E2FB6A0AD92D678D1FB6771671 /* cmac.c */,
+				DFD764CAF6F52C451D7F9409BF802E47 /* cmac.h */,
+				A325921356CD6AB847A4E2F18420C9DC /* compat-1.3.h */,
+				760B9DC839B455CC7FFCF7CCD119A963 /* config.h */,
+				0F2832DA0B8474E1477B3C9668876293 /* ctr_drbg.c */,
+				B1A01142D4F972533A32D9B4B8576E9D /* ctr_drbg.h */,
+				ABD7B98BCC7D2CE19099B95759B8B1D7 /* debug.c */,
+				6E3AD0042BCCA67022AD901A7293749A /* debug.h */,
+				C8F37CBEB36BCD95E1965281329A7AA2 /* des.c */,
+				696B323AEBA4C9E6B84D87E3026C937B /* des.h */,
+				4F6AC84C4D08485D93A888A4B9FC2BC2 /* dhm.c */,
+				4A4018D713F2B69D056CBD3666A652AB /* dhm.h */,
+				039E0E016C6B91F9ACB310038AC234B4 /* ecdh.c */,
+				2BF852A038425024E957590613BB1077 /* ecdh.h */,
+				73C3E7BA3F22BBDED407103B0F862C6B /* ecdsa.c */,
+				B2D99665D7D6A5238D54F07A913C775D /* ecdsa.h */,
+				043C73B57392351E285144372391EC9B /* ecjpake.c */,
+				25546FFC5B97506119C5208DFC349FB8 /* ecjpake.h */,
+				59A7BDAC212496090C11DF23429D29BC /* ecp.c */,
+				67D5ADB66C7286F096E61F4E7F56C8AB /* ecp.h */,
+				8A2BC513C65C32BEE688A0054DBF61B5 /* ecp_curves.c */,
+				26FC43BF1DBF238A5303E4ACFA3FEAD7 /* ecp_internal.h */,
+				E7F6B17A8277DFCC984A461946AF5DB2 /* entropy.c */,
+				DAD79BC4E6C8118A729BBA84FCFFDAD1 /* entropy.h */,
+				EF34425F4C6708A129A99B40B34C9B75 /* entropy_poll.c */,
+				E8A45C50C46C0DB40935903B37799362 /* entropy_poll.h */,
+				C17561DB75EEC4FF9F0B5B03CB09A918 /* error.c */,
+				D60060173D297916189D47C29D7D4EFB /* error.h */,
+				2DC093F37AF0C21FD378D15088912002 /* gcm.c */,
+				D29DC9A62C211F602A7473DD531EE2D8 /* gcm.h */,
+				435150BDD5580C417EC44478F27D9EE1 /* havege.c */,
+				136EC5DD19B3C7D9EA0F3744EAD5E879 /* havege.h */,
+				518169F224F8DDEDC6089AA5A7482265 /* hmac_drbg.c */,
+				5AE9DDDD0C22505427B67CB19FC8A841 /* hmac_drbg.h */,
+				8F4491F1D6AD1BA4AEC86FAF8519478F /* md.c */,
+				B1DA79E33F66B3B17C6B44792E4C1973 /* md.h */,
+				BE4DFE0EC83181D8030FD637E175381D /* md2.c */,
+				A096237B5AEC3DAC9078CCEEF469EE2A /* md2.h */,
+				6ED7D454976FFD49BE7E81C4AFA5DBEB /* md4.c */,
+				B5C49B7EC07C35C80350D3B34C9233E3 /* md4.h */,
+				5C43678C4533BE3AA867AF6ACAB63FB6 /* md5.c */,
+				299ED13A6F3620D54C34AA9B3352F54F /* md5.h */,
+				6BCCE21E758A16132359ABB4EFAB6E0B /* md_internal.h */,
+				717D16BA100DDF74900296570A77B28B /* md_wrap.c */,
+				171B7149D752C19786B7F6AAFF09E3CE /* memory_buffer_alloc.c */,
+				2B120BE5D1D1AE63C0AACB958E0C20F6 /* memory_buffer_alloc.h */,
+				9BF8F3B841C436B322C82913FB140BCE /* net.h */,
+				9718CD1B784A08E5C8BE51A3221A77EB /* net_sockets.c */,
+				59D09472384DE917CAA794F7FFE15CF1 /* net_sockets.h */,
+				A9780F86C22EF502F5639185A85FAB4E /* oid.c */,
+				1C25720D8D523F28A2D97191BC58235C /* oid.h */,
+				F01D8A7D1FAE94D29B71CEBA6DE3A0EA /* padlock.c */,
+				91E3B0D3BDFC4321DE3B5162333C96A0 /* padlock.h */,
+				A05A27ACEE25D03EEA8B4860E5F29614 /* pem.c */,
+				F9B0CA47DD4B65CC17BE768A79C0BAC4 /* pem.h */,
+				7A6CEF6B103E06852CFB9407D144A3B4 /* pk.c */,
+				D525ADAC7863CDC0F73E0D101F270C92 /* pk.h */,
+				225A602650E94565110B45CF1A6D9158 /* pk_internal.h */,
+				4B7F0EAAED734FFAC2AB8DD0F81BA8AE /* pk_wrap.c */,
+				7FEE88E3752B5E084A90785D30D702AC /* pkcs11.c */,
+				146E484D53F3DC1BF9D7545C84572E33 /* pkcs11.h */,
+				CB15FB7F73512802457AEE7399542117 /* pkcs12.c */,
+				9C49DAA1117AD2FADBC064DD6DCCDF81 /* pkcs12.h */,
+				E136CDE6799109B3CF75DC2B835EBE3C /* pkcs5.c */,
+				BCE4521745FDD3ED6FEFA492B96C4361 /* pkcs5.h */,
+				87C8A69FACF3582D97EB945B15607A2F /* pkparse.c */,
+				6A9F5CC675ECEE5DB8BBCC584730E57B /* pkwrite.c */,
+				9AD741CD3EFB0ACAE12E277ACDEB7C70 /* platform.c */,
+				B1CB621653548CFE3EF3D8939A3D4BFA /* platform.h */,
+				DDEB44197414BBEAC4C533AE97FA2980 /* platform_time.h */,
+				2625E02DCED16FC86D7829066F1D4FAF /* ripemd160.c */,
+				8309D8459F73D4C981FB6D6A58BDB1D2 /* ripemd160.h */,
+				A1B30721027098153B1AC7A11F1C0D3A /* rsa.c */,
+				91B748F71ABADDD67E22291AF0CDF74F /* rsa.h */,
+				BA9AD258D83DE9A459B8E22034F18F2E /* sha1.c */,
+				9700452B38BAC798FA4EFD6818F6ECE6 /* sha1.h */,
+				4CB4811C5F1E187D4E3555B105598E8C /* sha256.c */,
+				61AA7ED1E860075767A8BB8FF05F4D45 /* sha256.h */,
+				76328B2CDD41E5B4948D532141C6104F /* sha512.c */,
+				00D3DF8BF02C79EFE950F5ED3D5770D8 /* sha512.h */,
+				A81D257F7BD2DC8C5E50837110527255 /* ssl.h */,
+				EC2D616CB613441F28F2A9956BA8CEB2 /* ssl_cache.c */,
+				A1EA3CFDA663B5CBF42FBA64A96AD115 /* ssl_cache.h */,
+				EF296A7529F1F856EA4EA422E65B2D0C /* ssl_ciphersuites.c */,
+				98689B4FA562142A144BCB3B0ED94322 /* ssl_ciphersuites.h */,
+				D9AF512E1F822CB9823A47A33EB130C4 /* ssl_cli.c */,
+				67E4ACF0767AC6211223FD87D1972024 /* ssl_cookie.c */,
+				9624E62EB9AD8BD0E0D076950560910F /* ssl_cookie.h */,
+				3F02ADB7F3410EE75A3E046874F04093 /* ssl_internal.h */,
+				0F7CB1B1A9AAE54A46EB0428CFE0EC0C /* ssl_srv.c */,
+				DDD76F5E1E642869E1BC2E4EF28AE335 /* ssl_ticket.c */,
+				89A9834C2E15B461B6851E0713F69705 /* ssl_ticket.h */,
+				F9B64C43EF28CDB9A202F2E34F58E8A3 /* ssl_tls.c */,
+				C0D771DCCDB31F39D30F5F8EDC8FE018 /* threading.c */,
+				10F4210C5CC6913984B9D6B0EC6B19AC /* threading.h */,
+				FDA9EB56BDD32751E24DA77C504A7275 /* timing.c */,
+				7A27132850CB79B5CA9293203A33437D /* timing.h */,
+				EB0272F489E7B22CF8F6DD00AF9C350E /* version.c */,
+				209BBFEBA29F6FACC2E93C191422FA58 /* version.h */,
+				8AF9932778F2FB84CEAE51AA7EDA9E29 /* version_features.c */,
+				343415D947FE07203F57ED7156EF7171 /* x509.c */,
+				E901A541A7B99CBFC03B6D462B6E97F8 /* x509.h */,
+				61950522162FF9ED63AE762A52D8EBFA /* x509_create.c */,
+				5940A4DA80A30F329944C02A9F233CA2 /* x509_crl.c */,
+				D07011C1F115C8F622F283CCE8755CFD /* x509_crl.h */,
+				2D8FEC1480F451AD0D8302EB3A0E4EFC /* x509_crt.c */,
+				98649F8292F71B5D2684B1528FC294F1 /* x509_crt.h */,
+				13543E2711C5CDF8B65E1583C77FFB8D /* x509_csr.c */,
+				5BB4AF85D47642F3D37E92746A363D7A /* x509_csr.h */,
+				46BC717D11509AB39F0D639EB601F7AF /* x509write_crt.c */,
+				1FE0FD25F5048B7A72323D216331F34E /* x509write_csr.c */,
+				96CE608D6727DC10D8140CA6D61E460D /* xtea.c */,
+				70ADBFDDC88B7A1EFCBAD9CCCE8109DE /* xtea.h */,
+			);
+			name = mbedtls;
+			sourceTree = "<group>";
+		};
+		3F6C113E579D60298453FFF722B6155B /* Logan */ = {
+			isa = PBXGroup;
+			children = (
+				DF124098DE9785E9ABD90F4B60ADDF31 /* aes_util.c */,
+				704A5F780E2E32F5AE312331CAF4DBCB /* aes_util.h */,
+				FBFFF4E7BF62D2B524CF25225D38E4AD /* base_util.c */,
+				96A30BAEBD36E5A9882563D2CC9C0F4A /* base_util.h */,
+				5430F557D4911C56ABB78D559E210057 /* cJSON.c */,
+				F4F7FC8B03DA6A1D52303A3B0B0677D8 /* cJSON.h */,
+				820EFF6114B34F0B5B8ECDE01495DC7C /* clogan_core.c */,
+				1EF61E5C278184360F10672AD5514AC9 /* clogan_core.h */,
+				73A5E9B8FC52687306893BDEB074452C /* clogan_status.h */,
+				BAD6768C6F1DD022A07DCE913DA39CF8 /* console_util.c */,
+				372CB97FB75949785E998951A6512F79 /* console_util.h */,
+				660F145E77290FAD237947E6C0F7F554 /* construct_data.c */,
+				A9809FE77D273A2EC7F46CEAF2CCC534 /* construct_data.h */,
+				5D238623D472863BE8E12846BD3579DA /* directory_util.c */,
+				1D7148CC0DD8F94028F07F8FD41F7A47 /* directory_util.h */,
+				F3A8032B8D381EA9CE2F679781E7C792 /* json_util.c */,
+				347B26E15FE4DCD30A0EAC12417D6150 /* json_util.h */,
+				A579F2E238DD9D663E72A7180F99D17F /* Logan.h */,
+				C9D515C630ED52561E5E2D180C9B298A /* Logan.m */,
+				4D0F80B0FCC05E6DCA0C020F9E7DA4A7 /* logan_config.h */,
+				0777603F6DBB547DBC6AAD41EC72F2D5 /* main.c */,
+				C28E80F9931F32D1E01D10B1212C2BC0 /* mmap_util.c */,
+				937FD8B98426754004D9657E88D1E9F0 /* mmap_util.h */,
+				92A091E8115F29F260C6B519DAD11505 /* zlib_util.c */,
+				B3F72B9E3A7F8AE990E2C40CF05B1160 /* zlib_util.h */,
+				219D05E920AF8C18E55F89175BB40DAE /* mbedtls */,
+				0F2437481E869C4A609F0D98932FB9ED /* Support Files */,
+			);
+			name = Logan;
+			path = Logan;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		9CFC459CC9943154A378D24B25E125DB /* Pods-SNLogger */ = {
+			isa = PBXGroup;
+			children = (
+				08BB4D49E82DAEEADB932E29242EC22C /* Pods-SNLogger.modulemap */,
+				74B8D419514D13A4969F3E6AF073205E /* Pods-SNLogger-acknowledgements.markdown */,
+				992A8E86D5D81A433716250375991BE6 /* Pods-SNLogger-acknowledgements.plist */,
+				419EB832167875FF0CCB7509829F3417 /* Pods-SNLogger-dummy.m */,
+				013E7D9878AE72904E3F1E919A938908 /* Pods-SNLogger-frameworks.sh */,
+				596089E103CA1753D7A37BD854E89C17 /* Pods-SNLogger-Info.plist */,
+				96AB4052ADB411A8EA922EBBF09EC320 /* Pods-SNLogger-umbrella.h */,
+				277FD1A053A9236553BDBC69E8FC1CC5 /* Pods-SNLogger.debug.xcconfig */,
+				55CE5768A687C3478E229A3B2962F822 /* Pods-SNLogger.release.xcconfig */,
+			);
+			name = "Pods-SNLogger";
+			path = "Target Support Files/Pods-SNLogger";
+			sourceTree = "<group>";
+		};
+		B27D94A3BA7E116457EE58B46E2F1634 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9CFC459CC9943154A378D24B25E125DB /* Pods-SNLogger */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C5418A94FC597550F4EF2590000B5E93 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F6C113E579D60298453FFF722B6155B /* Logan */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				C5418A94FC597550F4EF2590000B5E93 /* Pods */,
+				06495A7D0C581A88DF345A1647603A02 /* Products */,
+				B27D94A3BA7E116457EE58B46E2F1634 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		75EE6093D36AA9C99C5BD95E51D1A0A8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2148C173BCF2DD53DEEED30D4E901C5 /* aes.h in Headers */,
+				0494F42C711E0B98F8234C020BA3E5AB /* aes_util.h in Headers */,
+				4B1F84AEB0ABAA1555ABDBFF476C935B /* aesni.h in Headers */,
+				C2AD66F8A925FEA46EDF6DCC370E2206 /* arc4.h in Headers */,
+				90F6FEE095C784B2A53010106BB2D755 /* asn1.h in Headers */,
+				2FA8A957FD2BBCCE5C7E6227AE9C7E3B /* asn1write.h in Headers */,
+				18B5988A940D4DB9A0570D997B006559 /* base64.h in Headers */,
+				D6F2D624510823CAC0590C4DFD4F2DA4 /* base_util.h in Headers */,
+				9EAE5555C86D8477E216DC24BDB16863 /* bignum.h in Headers */,
+				1FB297075A4B496A1AD8552DD9D62C50 /* blowfish.h in Headers */,
+				2CFE23A7770AB3BD2376B1CD3FB0AE67 /* bn_mul.h in Headers */,
+				A36AC3903D35882B747DBEA86BDA61B3 /* camellia.h in Headers */,
+				F169FC23249F523864BB113C40747B2E /* ccm.h in Headers */,
+				000FE2D9F2551812A326752829A58E7A /* certs.h in Headers */,
+				20D1D9DC292A39B2DF8D8CCB077351E9 /* check_config.h in Headers */,
+				F82F9D20E1F054D9EEDD5893BBA0A55C /* cipher.h in Headers */,
+				EB735DE0C5202C0B9EB5AC80A689BF6C /* cipher_internal.h in Headers */,
+				4BC87C58C40848E45A1595DF61E2A11E /* cJSON.h in Headers */,
+				1030A70255776CA8C86BEE866F111D2F /* clogan_core.h in Headers */,
+				DB1AA3172645689A34161519E851CCB4 /* clogan_status.h in Headers */,
+				FD888600DB3050564E32F0A92CF416D1 /* cmac.h in Headers */,
+				D520589F7F068BE980995A93A4DA1F72 /* compat-1.3.h in Headers */,
+				342A23AF2B1B8C192F20BB0A3AE19E12 /* config.h in Headers */,
+				E7679E7EABD698EB7B3F32D0631B828B /* console_util.h in Headers */,
+				935C48FF800F384ACFA2AF2040FD5678 /* construct_data.h in Headers */,
+				D729E29E44E5D56601DC213689DD4BD8 /* ctr_drbg.h in Headers */,
+				7070F77E9E94C5FF8280931FD4885BA3 /* debug.h in Headers */,
+				E433EA28214B841197F92AD8AC8C64F5 /* des.h in Headers */,
+				BF20D8A81832E60B5177D589EA65D89A /* dhm.h in Headers */,
+				BF7AAE28E0F7B06F9B3FD5B28E4D6538 /* directory_util.h in Headers */,
+				AE5702E23DD46B433242947E0ECF4B8B /* ecdh.h in Headers */,
+				933CA03BFE92CE23EF860AC56F34C850 /* ecdsa.h in Headers */,
+				AC781785B24ACF8905A66B33458E8DB6 /* ecjpake.h in Headers */,
+				D532855E6691175626FCD1F8040AF5D7 /* ecp.h in Headers */,
+				A7CE8A59DBD9A074FF4B33DC2B8DCFE0 /* ecp_internal.h in Headers */,
+				B3A92CF15C87B27CF9309CEF00A7FABD /* entropy.h in Headers */,
+				682892D0BAB8AE0C598C4679C1DDF619 /* entropy_poll.h in Headers */,
+				31CEFD717E3E274C9867E348CEDC3646 /* error.h in Headers */,
+				D040FFDC6EB5073563FA85F649882548 /* gcm.h in Headers */,
+				2699A536774D9467C9EE2243B3ABE74C /* havege.h in Headers */,
+				AA3DE5A957AB7979162E26C42CF05A3A /* hmac_drbg.h in Headers */,
+				C93565F49D3C761565B8F9E1AF5BC348 /* json_util.h in Headers */,
+				D13AB75156430022EDC283FFA3EE308C /* Logan.h in Headers */,
+				4AFBC45F667ACCF297E411F498FBC0E9 /* Logan-umbrella.h in Headers */,
+				45FF09F792D5C108EAEFD155671D6A7C /* logan_config.h in Headers */,
+				DF866212A45414B4850AFA434C2591E0 /* md.h in Headers */,
+				77CA1B1CE10761742CC47849CA289280 /* md2.h in Headers */,
+				0FA3BF0B973DF5FA9204A3C17A7DF98D /* md4.h in Headers */,
+				C29C8F82FDFCF98120EFB1097445B268 /* md5.h in Headers */,
+				4F055551012750BFB24D5E151E7576E6 /* md_internal.h in Headers */,
+				9DF5438A1E789881A97AB821F7769427 /* memory_buffer_alloc.h in Headers */,
+				A6B3C22B7BF624C327D862C0F38AEFD2 /* mmap_util.h in Headers */,
+				2BAB0FE287E313703726997D067A7BF1 /* net.h in Headers */,
+				AFF8101CF603DB6EAAE8275853D4714D /* net_sockets.h in Headers */,
+				23499C1BA93AB76C73B87DBF3D287716 /* oid.h in Headers */,
+				A6E7439DA6C8A242DFB0572CA51D4A6C /* padlock.h in Headers */,
+				8AE00E6CD0AA6FA07276C38EB02E5E02 /* pem.h in Headers */,
+				F9141E6686B07CB891781A1D0419E71D /* pk.h in Headers */,
+				70A12ECFA63D49D92C068215E85DA608 /* pk_internal.h in Headers */,
+				671A84D8962B1C3B258CC5134F78F111 /* pkcs11.h in Headers */,
+				8EF7F665F94F4D246BBAE5215CD79F36 /* pkcs12.h in Headers */,
+				1DCCEB3CD9AD8B32908744D5F225FBC3 /* pkcs5.h in Headers */,
+				0B801297E6769B8A431BF08332ACB44C /* platform.h in Headers */,
+				0DBFADDFE9377B6A9E9F663842973696 /* platform_time.h in Headers */,
+				26440DD7A86E8B1D1DF62CF2C821F9CB /* ripemd160.h in Headers */,
+				47CDFF5F5AD9C626ED493173C6E3C282 /* rsa.h in Headers */,
+				9E6E972AD26C9965180F97D01488E77C /* sha1.h in Headers */,
+				B0BE2004C8D3A3F86F989E5465669137 /* sha256.h in Headers */,
+				6B996DE073D147CA23B52CB330DBEED7 /* sha512.h in Headers */,
+				28A56EB3449C3EC15A097D9750799911 /* ssl.h in Headers */,
+				470DB48431832D11E39842CBBBB7DDD6 /* ssl_cache.h in Headers */,
+				3A0B62B7E144C4CB8A71335DC3469838 /* ssl_ciphersuites.h in Headers */,
+				AF5DB34E295AD6FB85E7C35AC91FF4BB /* ssl_cookie.h in Headers */,
+				049E454E1EDD592E37A482E165441E8E /* ssl_internal.h in Headers */,
+				F393F25EA0EFA247150F942884E6933D /* ssl_ticket.h in Headers */,
+				5B71F4807EBFBE41CA4CF8C81FCAE5DC /* threading.h in Headers */,
+				6CBFA7B43C6B65272716AB08DB78BD64 /* timing.h in Headers */,
+				10FA65FB3B5FEA6A16DD970F13C83467 /* version.h in Headers */,
+				7DB0ECCD055BCCD8F94366F39D3A2302 /* x509.h in Headers */,
+				4E81BE69464C709B0EA458247BA32093 /* x509_crl.h in Headers */,
+				4D079C8498CDF98DE943D74931A747C6 /* x509_crt.h in Headers */,
+				1023350A3788DC0864446F2E680523F7 /* x509_csr.h in Headers */,
+				452BECFB111234BDE88946A8D375ED3F /* xtea.h in Headers */,
+				387F2A794379DBE7EBB8CEF34C0F20E0 /* zlib_util.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A48975FFDE82105DB65F4B3C9895EE85 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F135CD103E06E541A1FEB28D0973887 /* Pods-SNLogger-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		86ACD7B206DB4007999F27E52ED4B5E5 /* Logan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3244AA10F984E981C58565CF66FC6598 /* Build configuration list for PBXNativeTarget "Logan" */;
+			buildPhases = (
+				75EE6093D36AA9C99C5BD95E51D1A0A8 /* Headers */,
+				6B520C368F28CF5AC76A3C1438F63F06 /* Sources */,
+				0E8F26069CB977517150CA82BC1199E0 /* Frameworks */,
+				53002DAF38897464D4167D3D6B9EF345 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Logan;
+			productName = Logan;
+			productReference = FD770166A040230FF13515EE000983C5 /* Logan */;
+			productType = "com.apple.product-type.framework";
+		};
+		B8F02204F1E48A1E6D4E3AC2F4D902B1 /* Pods-SNLogger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 503B5904E56A8739A75CDD4769A8CE82 /* Build configuration list for PBXNativeTarget "Pods-SNLogger" */;
+			buildPhases = (
+				A48975FFDE82105DB65F4B3C9895EE85 /* Headers */,
+				C139EB83A2B1A570A73B18863A3372A8 /* Sources */,
+				B0D2CCF891DEE68893E8961CBB0BBE6F /* Frameworks */,
+				F10447746EB9BA46A757DF7AFDAD0CF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4FC32B99C52036F7993B10D8AC47C6C1 /* PBXTargetDependency */,
+			);
+			name = "Pods-SNLogger";
+			productName = Pods_SNLogger;
+			productReference = 8D3925DE73F12F022D9BA1691FF00422 /* Pods-SNLogger */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 15.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			minimizedProjectReferenceProxies = 0;
+			productRefGroup = 06495A7D0C581A88DF345A1647603A02 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				86ACD7B206DB4007999F27E52ED4B5E5 /* Logan */,
+				B8F02204F1E48A1E6D4E3AC2F4D902B1 /* Pods-SNLogger */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		53002DAF38897464D4167D3D6B9EF345 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F10447746EB9BA46A757DF7AFDAD0CF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B520C368F28CF5AC76A3C1438F63F06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81E0C348742BB21CE2C18D2F857F24FB /* aes.c in Sources */,
+				93C35009C81CCF92A632132094DB92BA /* aes_util.c in Sources */,
+				90E57E5ED452113BFB29DF91450425D4 /* aesni.c in Sources */,
+				45CC4C6AA361AA0F89F98205F639857B /* arc4.c in Sources */,
+				3E722BB852012027C43B320BA5FA33CC /* asn1parse.c in Sources */,
+				DF09095319751E7E1B1C7F60809E248F /* asn1write.c in Sources */,
+				0320E90F37C93490A6EE3D83DEAEE033 /* base64.c in Sources */,
+				2EC7079748B8A011A66E823E4647A7F7 /* base_util.c in Sources */,
+				9E588A4C4A8ED4CDD0762760E1370A86 /* bignum.c in Sources */,
+				C38B4920DC9676D0364E4812DA37EF8C /* blowfish.c in Sources */,
+				26719F46D94B21C4A5CFFE4C02C87453 /* camellia.c in Sources */,
+				264706EA092DF035E39E7E08A79F96F9 /* ccm.c in Sources */,
+				EC7AFB0B8D6A39C919B309C8AA49C9CA /* certs.c in Sources */,
+				ABC4F9362330D3D540E3BF9BD6A6C48F /* cipher.c in Sources */,
+				A7530EF178D56683C942D9E0AE264A3E /* cipher_wrap.c in Sources */,
+				260B72717553F9B282E5F8D1018C485D /* cJSON.c in Sources */,
+				3EFB104BE40C733E22E89CF11232784B /* clogan_core.c in Sources */,
+				E8E3A9D9B0D885B817F4FA67409EC81E /* cmac.c in Sources */,
+				FF7AAF08DDD9B9FC0A17E512A0CEBAA4 /* console_util.c in Sources */,
+				C25BDA7FDA7FF7281D89FDBD46ADD575 /* construct_data.c in Sources */,
+				FF9693DDC57FC8C3ED0E9F04E89AB72D /* ctr_drbg.c in Sources */,
+				9930E353C51236C9DC47157CBECEF844 /* debug.c in Sources */,
+				8FD74DFB8673E35AFF2B5C75256E4237 /* des.c in Sources */,
+				B5E29852BA2BC81354F65FD106373500 /* dhm.c in Sources */,
+				18A1C02FF2B719CF4EA25BB5F9E46039 /* directory_util.c in Sources */,
+				3C7617708FCB87002AF004D5EF40AA01 /* ecdh.c in Sources */,
+				C0C07165E5ACE7C06D61861B13A8B511 /* ecdsa.c in Sources */,
+				45152B3FF1CB72771F1E9356B96D4C73 /* ecjpake.c in Sources */,
+				D13ECFFA956C5FB9F9B7DA8C78CACB08 /* ecp.c in Sources */,
+				E881304019FE5290E66940B5ACE44DB4 /* ecp_curves.c in Sources */,
+				459D4F6DD262A1D6C537F25832C6F31D /* entropy.c in Sources */,
+				BC30EB9F65CB778C48872E44FD1A0238 /* entropy_poll.c in Sources */,
+				90AC6CBBD90B11DAD52E558CC3CC0613 /* error.c in Sources */,
+				1BB0F3AEDBA4782FF6891FF3B2D573DC /* gcm.c in Sources */,
+				77C6C1F3FEE66A1A4F61544171D21063 /* havege.c in Sources */,
+				3E46254A5315E01C1A5656D4211AA77E /* hmac_drbg.c in Sources */,
+				955C3A50924D9945E746E56CE7CA7BF1 /* json_util.c in Sources */,
+				8236AB190359F99C49037E493D024466 /* Logan.m in Sources */,
+				8C98571FB716EC85A3756CC0DF58CFE7 /* Logan-dummy.m in Sources */,
+				8F35B810627E7DCB4806465E5BEE5A1E /* main.c in Sources */,
+				D0330CE00DD2B6DD3EDFBEC51088020B /* md.c in Sources */,
+				6B03D6EFF8DEC6C3C81869BD5BDAD031 /* md2.c in Sources */,
+				3FCD95791D19AB16E83256B4ADB78DC7 /* md4.c in Sources */,
+				C19FBDC580F60F4062F05A99E40B4B6A /* md5.c in Sources */,
+				9712571326DBCA3EFCA31F1636F68BBB /* md_wrap.c in Sources */,
+				274CFFB523E586461A79E7AF06FEA557 /* memory_buffer_alloc.c in Sources */,
+				477AB28A82757397A9C0FB3948EFEF5F /* mmap_util.c in Sources */,
+				BD3C9D46ECF53D4F18E5A262AD7C36A7 /* net_sockets.c in Sources */,
+				6A04929EA7EED0C3E70545FF059F94F3 /* oid.c in Sources */,
+				D2B75AF2245B69EAB8D7EAF9F2D69470 /* padlock.c in Sources */,
+				CCC25F47428C5A08FA7E7B2D248FB5B8 /* pem.c in Sources */,
+				911602CEF0198715D960B76AD82721EE /* pk.c in Sources */,
+				278D81D7BA2C0396FE0E0266D6EC233B /* pk_wrap.c in Sources */,
+				0763D9090FF5EC1376CC5E976A7021A0 /* pkcs11.c in Sources */,
+				E2D33125E7211F1BF1108015DAD9D00A /* pkcs12.c in Sources */,
+				9752374B78DB4FC6B778A4DB7A18E1A2 /* pkcs5.c in Sources */,
+				D9829B275976AC7B40C384426E643F1E /* pkparse.c in Sources */,
+				235D946954D469CEB2E9E287754EAF3B /* pkwrite.c in Sources */,
+				0DA7BA6C32AC11198C5B204090025682 /* platform.c in Sources */,
+				B4C516DC32142123E05BC5A34062DD2F /* ripemd160.c in Sources */,
+				86CC58DBD102CDF5779E72A715210FF2 /* rsa.c in Sources */,
+				EF98814159BCA8779BEC9BCB0B91E1FD /* sha1.c in Sources */,
+				53B1F3837E3D31F9C6CBE1093F7EF69D /* sha256.c in Sources */,
+				549BC83B6E5586239D0E135DA23FF7C4 /* sha512.c in Sources */,
+				F66853DB31ADC2A04DB234C19C32B7AB /* ssl_cache.c in Sources */,
+				303D884F813F8A8F0E006FA2456E7902 /* ssl_ciphersuites.c in Sources */,
+				9B3864AB48B37EB9B47BC76C73A2C779 /* ssl_cli.c in Sources */,
+				81669597D2FD434795C7C6D6C05AF16C /* ssl_cookie.c in Sources */,
+				83FF193FCE4E9517FB845DF63C1A39BC /* ssl_srv.c in Sources */,
+				ABBE6FDFFCE3561B03B495659EA242AE /* ssl_ticket.c in Sources */,
+				83D959C8F86762460DF29FD8CBEAEC85 /* ssl_tls.c in Sources */,
+				51A3C32AAD76B231F618C84C752A240E /* threading.c in Sources */,
+				8FBB9BFBF27FD7C5517714A5B7BAA1A4 /* timing.c in Sources */,
+				9C2C62D565E91805971C37024A458A13 /* version.c in Sources */,
+				81FDFBA75AB3A63193E0CB630FF28BEC /* version_features.c in Sources */,
+				E208426C28C0AD24DD26560213618449 /* x509.c in Sources */,
+				FFF1665FBCF22E8A3118AC367012801A /* x509_create.c in Sources */,
+				C2B407B790D91DA5DFA806FF8050803A /* x509_crl.c in Sources */,
+				DE6AC72A3F6E936EFA712C5625B75A5D /* x509_crt.c in Sources */,
+				D52DF8EE528226A969018367B9F4B73B /* x509_csr.c in Sources */,
+				1A0A6B2C6D2B924F31985760BB0B35D5 /* x509write_crt.c in Sources */,
+				9DA20914517EE2CE951687B736F3F1C1 /* x509write_csr.c in Sources */,
+				B80F24FF04207645FF711F37D6CFAB50 /* xtea.c in Sources */,
+				0D14969A172A6665397F055EC1034C39 /* zlib_util.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C139EB83A2B1A570A73B18863A3372A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				924DBDF967E2065D379AA2A1D26BF0AE /* Pods-SNLogger-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4FC32B99C52036F7993B10D8AC47C6C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Logan;
+			target = 86ACD7B206DB4007999F27E52ED4B5E5 /* Logan */;
+			targetProxy = 477F128AB1CD9FF20B4E9E1FCA01AE4F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		13350748A99DFC63231987ED1D02ED05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55CE5768A687C3478E229A3B2962F822 /* Pods-SNLogger.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SNLogger/Pods-SNLogger-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SNLogger/Pods-SNLogger.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7832D1FA1BB795056CB1C4E0EEE082FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 487F3D25E1EDD74576521CB784019E2E /* Logan.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Logan/Logan-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Logan/Logan-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Logan/Logan.modulemap";
+				PRODUCT_MODULE_NAME = Logan;
+				PRODUCT_NAME = Logan;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B86D71A5E7AB53EB2C08DEA39FBD2050 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		BD5E84F7B72D348654A4D58B6BA51118 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		DB50EBDABA5EF4C41EA458FD029D732D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 277FD1A053A9236553BDBC69E8FC1CC5 /* Pods-SNLogger.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SNLogger/Pods-SNLogger-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SNLogger/Pods-SNLogger.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EEF1AEC04918DDD337D4729A54E46778 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A257993445F24AE1FEB9243CF92B365 /* Logan.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Logan/Logan-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Logan/Logan-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Logan/Logan.modulemap";
+				PRODUCT_MODULE_NAME = Logan;
+				PRODUCT_NAME = Logan;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3244AA10F984E981C58565CF66FC6598 /* Build configuration list for PBXNativeTarget "Logan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEF1AEC04918DDD337D4729A54E46778 /* Debug */,
+				7832D1FA1BB795056CB1C4E0EEE082FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD5E84F7B72D348654A4D58B6BA51118 /* Debug */,
+				B86D71A5E7AB53EB2C08DEA39FBD2050 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		503B5904E56A8739A75CDD4769A8CE82 /* Build configuration list for PBXNativeTarget "Pods-SNLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB50EBDABA5EF4C41EA458FD029D732D /* Debug */,
+				13350748A99DFC63231987ED1D02ED05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

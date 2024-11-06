@@ -20,7 +20,7 @@ public class DemoSNLoggerImpl implements ILog {
     }
 
     @Override
-    public void onLog(T tag, SNLogLevel logLevel, @NonNull String message, @Nullable Throwable tr, @Nullable SNLogMethodInfo methodInfo) {
-        // todo 干点啥
+    public void onLog(@NonNull T tag, @NonNull SNLogLevel logLevel, @NonNull String message, @Nullable Throwable tr, @Nullable SNLogMethodInfo methodInfo) {
+
     }
 }

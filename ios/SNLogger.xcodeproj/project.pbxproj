@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 63;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C4BD7CDE11A8F368026C598 /* Pods_SNLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF12C845E846E8A080AF28BA /* Pods_SNLogger.framework */; };
+		FC2FFA602CCA5D7C00AACDAA /* SNLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = FC2FFA5F2CCA5D7C00AACDAA /* SNLogger.m */; };
+		FC5D22CA2CCB45A000629356 /* LoganImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5D22C92CCB45A000629356 /* LoganImpl.m */; };
+		FC5D22DD2CCB72FC00629356 /* PringLogImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5D22DB2CCB72FC00629356 /* PringLogImpl.m */; };
+		FC99F5EA2CC50B2B00E21312 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC99F5DD2CC50B2B00E21312 /* AppDelegate.m */; };
+		FC99F5EB2CC50B2B00E21312 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC99F5E22CC50B2B00E21312 /* main.m */; };
+		FC99F5EC2CC50B2B00E21312 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC99F5E62CC50B2B00E21312 /* SceneDelegate.m */; };
+		FC99F5ED2CC50B2B00E21312 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC99F5E82CC50B2B00E21312 /* ViewController.m */; };
+		FC99F5EE2CC50B2B00E21312 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC99F5DE2CC50B2B00E21312 /* Assets.xcassets */; };
+		FC99F5F02CC50B2B00E21312 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC99F5E12CC50B2B00E21312 /* LaunchScreen.storyboard */; };
+		FC99F5F12CC50B2B00E21312 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC99F5E42CC50B2B00E21312 /* Main.storyboard */; };
+		FCA9E2BB2CCBEEF900E98922 /* LogEXED.m in Sources */ = {isa = PBXBuildFile; fileRef = FCA9E2BA2CCBEEF900E98922 /* LogEXED.m */; };
+		FCA9E2BE2CCBEF2F00E98922 /* LogEXEI.m in Sources */ = {isa = PBXBuildFile; fileRef = FCA9E2BD2CCBEF2F00E98922 /* LogEXEI.m */; };
+		FCA9E2C12CCBEF3900E98922 /* LogEXEV.m in Sources */ = {isa = PBXBuildFile; fileRef = FCA9E2C02CCBEF3900E98922 /* LogEXEV.m */; };
+		FCA9E2C42CCBEF4500E98922 /* LogEXEW.m in Sources */ = {isa = PBXBuildFile; fileRef = FCA9E2C32CCBEF4500E98922 /* LogEXEW.m */; };
+		FCA9E2C72CCBEF4C00E98922 /* LogEXEE.m in Sources */ = {isa = PBXBuildFile; fileRef = FCA9E2C62CCBEF4C00E98922 /* LogEXEE.m */; };
+		FCA9E2CA2CCBEF5700E98922 /* LogEXEWTF.m in Sources */ = {isa = PBXBuildFile; fileRef = FCA9E2C92CCBEF5700E98922 /* LogEXEWTF.m */; };
+		FCA9E2CD2CCBF18600E98922 /* SNLoggerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = FCA9E2CC2CCBF18600E98922 /* SNLoggerConfig.m */; };
+		FCA9E2D02CCBF3BC00E98922 /* SNLogTag.m in Sources */ = {isa = PBXBuildFile; fileRef = FCA9E2CF2CCBF3BC00E98922 /* SNLogTag.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D79A091C18071D91FB81F0C /* Pods-SNLogger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNLogger.debug.xcconfig"; path = "Target Support Files/Pods-SNLogger/Pods-SNLogger.debug.xcconfig"; sourceTree = "<group>"; };
+		C9E4CA0886C852201AE47A6B /* Pods-SNLogger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNLogger.release.xcconfig"; path = "Target Support Files/Pods-SNLogger/Pods-SNLogger.release.xcconfig"; sourceTree = "<group>"; };
+		DF12C845E846E8A080AF28BA /* Pods_SNLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SNLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC2FFA5E2CCA5D7C00AACDAA /* SNLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SNLogger.h; sourceTree = "<group>"; };
+		FC2FFA5F2CCA5D7C00AACDAA /* SNLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNLogger.m; sourceTree = "<group>"; };
+		FC490B6C2CC4F23000863FE5 /* SNLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SNLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC5D22C82CCB45A000629356 /* LoganImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoganImpl.h; sourceTree = "<group>"; };
+		FC5D22C92CCB45A000629356 /* LoganImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoganImpl.m; sourceTree = "<group>"; };
+		FC5D22CE2CCB717E00629356 /* ILogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ILogger.h; sourceTree = "<group>"; };
+		FC5D22D12CCB71C500629356 /* SNLoggerLevel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SNLoggerLevel.h; sourceTree = "<group>"; };
+		FC5D22DA2CCB72FC00629356 /* PringLogImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PringLogImpl.h; sourceTree = "<group>"; };
+		FC5D22DB2CCB72FC00629356 /* PringLogImpl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PringLogImpl.m; sourceTree = "<group>"; };
+		FC5D22DE2CCB75A500629356 /* ITag.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ITag.h; sourceTree = "<group>"; };
+		FC5D22E02CCB782D00629356 /* ILogExecute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ILogExecute.h; sourceTree = "<group>"; };
+		FC99F5DC2CC50B2B00E21312 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FC99F5DD2CC50B2B00E21312 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FC99F5DE2CC50B2B00E21312 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC99F5DF2CC50B2B00E21312 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC99F5E02CC50B2B00E21312 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FC99F5E22CC50B2B00E21312 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FC99F5E32CC50B2B00E21312 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FC99F5E52CC50B2B00E21312 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		FC99F5E62CC50B2B00E21312 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		FC99F5E72CC50B2B00E21312 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FC99F5E82CC50B2B00E21312 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FCA9E2B92CCBEEF900E98922 /* LogEXED.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogEXED.h; sourceTree = "<group>"; };
+		FCA9E2BA2CCBEEF900E98922 /* LogEXED.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogEXED.m; sourceTree = "<group>"; };
+		FCA9E2BC2CCBEF2F00E98922 /* LogEXEI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogEXEI.h; sourceTree = "<group>"; };
+		FCA9E2BD2CCBEF2F00E98922 /* LogEXEI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogEXEI.m; sourceTree = "<group>"; };
+		FCA9E2BF2CCBEF3900E98922 /* LogEXEV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogEXEV.h; sourceTree = "<group>"; };
+		FCA9E2C02CCBEF3900E98922 /* LogEXEV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogEXEV.m; sourceTree = "<group>"; };
+		FCA9E2C22CCBEF4500E98922 /* LogEXEW.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogEXEW.h; sourceTree = "<group>"; };
+		FCA9E2C32CCBEF4500E98922 /* LogEXEW.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogEXEW.m; sourceTree = "<group>"; };
+		FCA9E2C52CCBEF4C00E98922 /* LogEXEE.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogEXEE.h; sourceTree = "<group>"; };
+		FCA9E2C62CCBEF4C00E98922 /* LogEXEE.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogEXEE.m; sourceTree = "<group>"; };
+		FCA9E2C82CCBEF5700E98922 /* LogEXEWTF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogEXEWTF.h; sourceTree = "<group>"; };
+		FCA9E2C92CCBEF5700E98922 /* LogEXEWTF.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogEXEWTF.m; sourceTree = "<group>"; };
+		FCA9E2CB2CCBF18600E98922 /* SNLoggerConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SNLoggerConfig.h; sourceTree = "<group>"; };
+		FCA9E2CC2CCBF18600E98922 /* SNLoggerConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNLoggerConfig.m; sourceTree = "<group>"; };
+		FCA9E2CE2CCBF3BC00E98922 /* SNLogTag.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SNLogTag.h; sourceTree = "<group>"; };
+		FCA9E2CF2CCBF3BC00E98922 /* SNLogTag.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNLogTag.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC490B692CC4F23000863FE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C4BD7CDE11A8F368026C598 /* Pods_SNLogger.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5DAFE8090A8BC5CFBBE9B4D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1D79A091C18071D91FB81F0C /* Pods-SNLogger.debug.xcconfig */,
+				C9E4CA0886C852201AE47A6B /* Pods-SNLogger.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C33F583039F6C9AA4D13A263 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF12C845E846E8A080AF28BA /* Pods_SNLogger.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC2FFA5B2CCA5D3300AACDAA /* SNLogger */ = {
+			isa = PBXGroup;
+			children = (
+				FC5D22CB2CCB714100629356 /* core */,
+				FC2FFA5E2CCA5D7C00AACDAA /* SNLogger.h */,
+				FC2FFA5F2CCA5D7C00AACDAA /* SNLogger.m */,
+			);
+			path = SNLogger;
+			sourceTree = "<group>";
+		};
+		FC490B632CC4F23000863FE5 = {
+			isa = PBXGroup;
+			children = (
+				FC99F5E92CC50B2B00E21312 /* SNLogger */,
+				FC490B6D2CC4F23000863FE5 /* Products */,
+				5DAFE8090A8BC5CFBBE9B4D1 /* Pods */,
+				C33F583039F6C9AA4D13A263 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FC490B6D2CC4F23000863FE5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC490B6C2CC4F23000863FE5 /* SNLogger.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC5D22CB2CCB714100629356 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				FC5D22E62CCB7B3900629356 /* impl */,
+				FC5D22E02CCB782D00629356 /* ILogExecute.h */,
+				FC5D22DA2CCB72FC00629356 /* PringLogImpl.h */,
+				FC5D22DB2CCB72FC00629356 /* PringLogImpl.m */,
+				FC5D22CE2CCB717E00629356 /* ILogger.h */,
+				FC5D22D12CCB71C500629356 /* SNLoggerLevel.h */,
+				FC5D22DE2CCB75A500629356 /* ITag.h */,
+				FCA9E2CB2CCBF18600E98922 /* SNLoggerConfig.h */,
+				FCA9E2CC2CCBF18600E98922 /* SNLoggerConfig.m */,
+				FCA9E2CE2CCBF3BC00E98922 /* SNLogTag.h */,
+				FCA9E2CF2CCBF3BC00E98922 /* SNLogTag.m */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		FC5D22E62CCB7B3900629356 /* impl */ = {
+			isa = PBXGroup;
+			children = (
+				FCA9E2B92CCBEEF900E98922 /* LogEXED.h */,
+				FCA9E2BA2CCBEEF900E98922 /* LogEXED.m */,
+				FCA9E2BC2CCBEF2F00E98922 /* LogEXEI.h */,
+				FCA9E2BD2CCBEF2F00E98922 /* LogEXEI.m */,
+				FCA9E2BF2CCBEF3900E98922 /* LogEXEV.h */,
+				FCA9E2C02CCBEF3900E98922 /* LogEXEV.m */,
+				FCA9E2C22CCBEF4500E98922 /* LogEXEW.h */,
+				FCA9E2C32CCBEF4500E98922 /* LogEXEW.m */,
+				FCA9E2C52CCBEF4C00E98922 /* LogEXEE.h */,
+				FCA9E2C62CCBEF4C00E98922 /* LogEXEE.m */,
+				FCA9E2C82CCBEF5700E98922 /* LogEXEWTF.h */,
+				FCA9E2C92CCBEF5700E98922 /* LogEXEWTF.m */,
+			);
+			path = impl;
+			sourceTree = "<group>";
+		};
+		FC99F5E92CC50B2B00E21312 /* SNLogger */ = {
+			isa = PBXGroup;
+			children = (
+				FC2FFA5B2CCA5D3300AACDAA /* SNLogger */,
+				FC99F5DC2CC50B2B00E21312 /* AppDelegate.h */,
+				FC99F5DD2CC50B2B00E21312 /* AppDelegate.m */,
+				FC99F5DE2CC50B2B00E21312 /* Assets.xcassets */,
+				FC99F5DF2CC50B2B00E21312 /* Info.plist */,
+				FC99F5E12CC50B2B00E21312 /* LaunchScreen.storyboard */,
+				FC99F5E22CC50B2B00E21312 /* main.m */,
+				FC99F5E42CC50B2B00E21312 /* Main.storyboard */,
+				FC99F5E52CC50B2B00E21312 /* SceneDelegate.h */,
+				FC99F5E62CC50B2B00E21312 /* SceneDelegate.m */,
+				FC99F5E72CC50B2B00E21312 /* ViewController.h */,
+				FC99F5E82CC50B2B00E21312 /* ViewController.m */,
+				FC5D22C82CCB45A000629356 /* LoganImpl.h */,
+				FC5D22C92CCB45A000629356 /* LoganImpl.m */,
+			);
+			path = SNLogger;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC490B6B2CC4F23000863FE5 /* SNLogger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC490B842CC4F23100863FE5 /* Build configuration list for PBXNativeTarget "SNLogger" */;
+			buildPhases = (
+				2B3170B648B8C68D6DCC09CD /* [CP] Check Pods Manifest.lock */,
+				FC490B682CC4F23000863FE5 /* Sources */,
+				FC490B692CC4F23000863FE5 /* Frameworks */,
+				FC490B6A2CC4F23000863FE5 /* Resources */,
+				9C6E0B3EEAE5A682E3896FFE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SNLogger;
+			productName = SNLogger;
+			productReference = FC490B6C2CC4F23000863FE5 /* SNLogger.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC490B642CC4F23000863FE5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					FC490B6B2CC4F23000863FE5 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = FC490B672CC4F23000863FE5 /* Build configuration list for PBXProject "SNLogger" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC490B632CC4F23000863FE5;
+			minimizedProjectReferenceProxies = 1;
+			productRefGroup = FC490B6D2CC4F23000863FE5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC490B6B2CC4F23000863FE5 /* SNLogger */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC490B6A2CC4F23000863FE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC99F5EE2CC50B2B00E21312 /* Assets.xcassets in Resources */,
+				FC99F5F02CC50B2B00E21312 /* LaunchScreen.storyboard in Resources */,
+				FC99F5F12CC50B2B00E21312 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B3170B648B8C68D6DCC09CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SNLogger-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C6E0B3EEAE5A682E3896FFE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SNLogger/Pods-SNLogger-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SNLogger/Pods-SNLogger-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SNLogger/Pods-SNLogger-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC490B682CC4F23000863FE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC99F5EA2CC50B2B00E21312 /* AppDelegate.m in Sources */,
+				FCA9E2BB2CCBEEF900E98922 /* LogEXED.m in Sources */,
+				FCA9E2BE2CCBEF2F00E98922 /* LogEXEI.m in Sources */,
+				FC5D22CA2CCB45A000629356 /* LoganImpl.m in Sources */,
+				FC2FFA602CCA5D7C00AACDAA /* SNLogger.m in Sources */,
+				FCA9E2C72CCBEF4C00E98922 /* LogEXEE.m in Sources */,
+				FCA9E2D02CCBF3BC00E98922 /* SNLogTag.m in Sources */,
+				FCA9E2CD2CCBF18600E98922 /* SNLoggerConfig.m in Sources */,
+				FCA9E2C42CCBEF4500E98922 /* LogEXEW.m in Sources */,
+				FCA9E2CA2CCBEF5700E98922 /* LogEXEWTF.m in Sources */,
+				FC99F5EB2CC50B2B00E21312 /* main.m in Sources */,
+				FCA9E2C12CCBEF3900E98922 /* LogEXEV.m in Sources */,
+				FC5D22DD2CCB72FC00629356 /* PringLogImpl.m in Sources */,
+				FC99F5EC2CC50B2B00E21312 /* SceneDelegate.m in Sources */,
+				FC99F5ED2CC50B2B00E21312 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FC99F5E12CC50B2B00E21312 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC99F5E02CC50B2B00E21312 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FC99F5E42CC50B2B00E21312 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC99F5E32CC50B2B00E21312 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC490B852CC4F23100863FE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D79A091C18071D91FB81F0C /* Pods-SNLogger.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JG43D9FHBA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SNLogger/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vd.SNLogger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FC490B862CC4F23100863FE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9E4CA0886C852201AE47A6B /* Pods-SNLogger.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JG43D9FHBA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SNLogger/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vd.SNLogger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FC490B872CC4F23100863FE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FC490B882CC4F23100863FE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC490B672CC4F23000863FE5 /* Build configuration list for PBXProject "SNLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC490B872CC4F23100863FE5 /* Debug */,
+				FC490B882CC4F23100863FE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC490B842CC4F23100863FE5 /* Build configuration list for PBXNativeTarget "SNLogger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC490B852CC4F23100863FE5 /* Debug */,
+				FC490B862CC4F23100863FE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC490B642CC4F23000863FE5 /* Project object */;
+}
