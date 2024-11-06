@@ -10,13 +10,13 @@ import com.vd.snlogger.util.SNLogSDKT
 object SNLogger {
     const val TAG = "SNLogger"
     private var sLogList: MutableList<ILog> = mutableListOf()
-    private lateinit var sLogExeI: LogExecute
-    private lateinit var sLogExeD: LogExecute
-    private lateinit var sLogExeV: LogExecute
-    private lateinit var sLogExeW: LogExecute
-    private lateinit var sLogExeE: LogExecute
-    private lateinit var sLogExeCrash: LogExecute
-    private lateinit var sLogExeWTF: LogExecute
+    private var sLogExeI: LogExecute
+    private var sLogExeD: LogExecute
+    private var sLogExeV: LogExecute
+    private var sLogExeW: LogExecute
+    private var sLogExeE: LogExecute
+    private var sLogExeCrash: LogExecute
+    private var sLogExeWTF: LogExecute
 
     init {
         addLogImpl(PrintLogImpl())
