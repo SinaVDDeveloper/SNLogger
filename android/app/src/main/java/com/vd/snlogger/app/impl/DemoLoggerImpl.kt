@@ -1,6 +1,5 @@
 package com.vd.snlogger.app.impl
 
-import android.util.Log
 import com.vd.snlogger.app.util.SaveFileUtils
 import com.vd.snlogger.base.ILog
 import com.vd.snlogger.base.T
@@ -20,10 +19,13 @@ class DemoLoggerImpl : ILog {
         tr: Throwable?,
         methodInfo: SNLogMethodInfo?,
     ) {
-        val content = "TAG: " + SNLogUtils.parseTAG(tag) + ", content: " + SNLogUtils.parseContent(
+        var content = "TAG: " + SNLogUtils.parseTAG(tag) + ", content: " + SNLogUtils.parseContent(
             message,
             methodInfo
         )
+        if (tr != null) {
+            content += " throwable: " + tr.stackTraceToString()
+        }
         SaveFileUtils.save(content)
     }
 }
