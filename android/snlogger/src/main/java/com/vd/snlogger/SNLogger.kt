@@ -110,6 +110,7 @@ object SNLogger {
         }
     }
 
+    @JvmStatic
     fun addLogImpl(log: ILog) {
         sLogList.add(log)
     }
@@ -153,11 +154,6 @@ object SNLogger {
     }
 
     @JvmStatic
-    fun i(tag: String, content: String) {
-        log(sLogExeI, SNLogSDKT.CODE, content, null, null)
-    }
-
-    @JvmStatic
     fun i(tag: T, content: String) {
         log(sLogExeI, tag, content, null, null)
     }
@@ -186,11 +182,6 @@ object SNLogger {
 
     @JvmStatic
     fun v(content: String) {
-        log(sLogExeV, SNLogSDKT.CODE, content, null, null)
-    }
-
-    @JvmStatic
-    fun v(tag: String, content: String) {
         log(sLogExeV, SNLogSDKT.CODE, content, null, null)
     }
 
@@ -227,16 +218,6 @@ object SNLogger {
     }
 
     @JvmStatic
-    fun w(tr: Throwable, content: String) {
-        log(sLogExeW, SNLogSDKT.CODE, content, null, null)
-    }
-
-    @JvmStatic
-    fun w(tag: String, tr: Throwable, content: String) {
-        log(sLogExeW, SNLogSDKT.CODE, content, tr, null)
-    }
-
-    @JvmStatic
     fun w(tag: T, content: String) {
         log(sLogExeW, tag, content, null, null)
     }
@@ -269,16 +250,6 @@ object SNLogger {
     }
 
     @JvmStatic
-    fun e(tr: Throwable, content: String) {
-        log(sLogExeE, SNLogSDKT.CODE, content, null, null)
-    }
-
-    @JvmStatic
-    fun e(tag: String, tr: Throwable, content: String) {
-        log(sLogExeE, SNLogSDKT.CODE, content, tr, null)
-    }
-
-    @JvmStatic
     fun e(tag: T, content: String) {
         log(sLogExeE, tag, content, null, null)
     }
@@ -306,13 +277,8 @@ object SNLogger {
     }
 
     @JvmStatic
-    fun crash(tag: String, tr: Throwable, content: String) {
-        log(sLogExeCrash, SNLogSDKT.CODE, content, null, null)
-    }
-
-    @JvmStatic
     fun crash(tag: T, content: String) {
-        log(sLogExeCrash, tag!!, content, null, null)
+        log(sLogExeCrash, tag, content, null, null)
     }
 
     @JvmStatic

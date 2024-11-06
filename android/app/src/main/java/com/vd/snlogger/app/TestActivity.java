@@ -22,7 +22,10 @@ public class TestActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (v == mBtn1) {
+                    SNLogger.i("测试日志1");
                     SNLogger.i(DemoLogT.DEMO_LOG_T, "测试日志");
+                    SNLogger.i(DemoLogT.DEMO_LOG_T, new Exception("abc"), "测试日志");
+                    SNLogger.i(DemoLogT.DEMO_LOG_T, new Exception("abc"), "测试日志", "test class", 10, "test name");
                 }
             }
         });
